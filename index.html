@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jubilee_Landing_page</title>
   <script src="https://kit.fontawesome.com/acacb635ac.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="/js/custom.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
 </head>
 
 <body>
@@ -22,59 +25,55 @@
       </div>
       <nav>
         <div class="jubilee-logo">
-          <a href="#none"><img src="/images/Jubilee-logo.png" alt="교회로고"></a>
+          <a href="#none"><img src="/resources/images/common/Jubilee-logo.png" alt="교회로고"></a>
         </div>
         <div class="gnb">
-          <div class="introduction">
-            <p class="gnb-title">교회소개</p>
-            <div class="gnb-dropdown">
-              <a href="#none">사역원리</a>
-              <a href="#none">새가족 안내</a>
-              <a href="#none">예배 안내</a>
-              <a href="#none">섬기는 분들</a>
-              <a href="#none">오시는 길</a>
-            </div>
-          </div>
-          <div class="missionary">
-            <p class="gnb-title">선교</p>
-            <div class="gnb-dropdown">
-              <a href="#none">미사모 소개</a>
-            </div>
-          </div>
-          <div class="sermon">
-            <p class="gnb-title">말씀</p>
-            <div class="gnb-dropdown">
-              <a href="#none">주일예배 설교</a>
-            </div>  
-          </div>
-          <div class="nurture">
-            <p class="gnb-title">양육</p>
-            <div class="gnb-dropdown">
-              <a href="#none">청년부</a>
-              <a href="#none">장년 양육부서</a>
-              <a href="#none">제자성경연구원</a>
-            </div>
-          </div>
-          <div class="education">
-            <p class="gnb-title">자녀교육</p>
-            <div class="gnb-dropdown">
-              <a href="#none">자녀 교육부</a>
-              <a href="#none">한국 학교</a>
-            </div>
-          </div>
-          <div class="news">
-            <p class="gnb-title">소식</p>
-            <div class="gnb-dropdown">
-              <a href="#none">교회 소식</a>
-              <a href="#none">교우 동정</a>
-              <a href="#none">주보</a>
-            </div>
-          </div>
+          <ul>
+            <li class="moreicon"><a href="#none">교회소개</a>
+              <ul>
+                <li><a href="#none">사역원리</a></li>
+                <li><a href="#none">새가족 안내</a></li>
+                <li><a href="#none">예배 안내</a></li>
+                <li><a href="#none">섬기는 분들</a></li>
+                <li><a href="#none">오시는 길</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">선교</a>
+              <ul>
+                <li><a href="#none">미사모 소개</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">말씀</a>
+              <ul>
+                <li><a href="#none">주일예배 설교</a></li>
+              </ul>
+            </li>
+            <li class="moreicon"><a href="#none">양육</a>
+              <ul>
+                <li><a href="#none">청년부</a></li>
+                <li><a href="#none">장년 양육부서</a></li>
+                <li><a href="#none">제자성경연구원</a></li>
+              </ul>
+            </li>
+            <li class="moreicon" ><a href="#none">자녀교육</a>
+              <ul>
+                <li><a href="#none">자녀 교육부</a></li>
+                <li><a href="#none">한국 학교</a></li>
+              </ul>
+            </li>
+            <li class="moreicon"><a href="#none">소식</a>
+              <ul>
+                <li><a href="#none">교회 소식</a></li>
+                <li><a href="#none">교우 동정</a></li>
+                <li><a href="#none">주보</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="goyoutube">
           <a href="#none">
-            <img src="/images/youtube-logo.png" alt="youtube-logo">
-            <p>교회채널<span>Go!</span></p>
+            <img src="/resources/images/common/youtube-logo.png" alt="youtube-logo">
+            <p>교회채널<span> Go!</span></p>
           </a>
         </div>
         <div class="trigger">
@@ -88,8 +87,10 @@
     <main class="intro">
       <div class="intro-inner">
         <div class="intro-slider">
-          <p class="slider-heading">예배<span>하는</span> <em>교회</em></p>
-          <p class="slider-desc"><span>기쁨의 교회</span>는 천상의 하나님 보좌 앞에 나아가는 <span>예배하는 교회</span>입니다.</p>
+          <div class="slider-heading">
+            <p>예배<b>하는</b> <em>교회</em></p></div>
+          <div class="slider-desc">
+            <p><span>기쁨의 교회</span>는</p> <p>천상의 하나님 보좌 앞에 나아가는 <span>예배하는 교회</span>입니다.</p></div>
         </div>
         <div class="intro-shortcut">
           <a href="#none" class="shortcut-item">
@@ -112,53 +113,60 @@
       </div>
     </main>
 
-    <section class="sermon">
+    <section class="sermons">
       <div class="sermon-inner">
         <div class="sermon-summary">
           <div class="sermon heading">
-            <h1>주일예배 설교</h1>
-            <em class="font-decor">Sermon</em>
+            <h1>주일예배 설교</h1>            
             <hr>
           </div>
           <div class="sermon-contents">
             <a href="#none" class="sermon-card">
-              <img src="/images/sermon-image01.jpg" alt="설교사진1">
-              <div class="card-badge">
-                <span>주일 3부예배</span>
-                <em>2024.01.14</em>
+              <img src="/resources/images/landing/sermon_image01.jpg" alt="설교사진1">
+              <div class="card-desc">
+                <div class="card-badge">
+                  <span>주일 3부예배</span>
+                  <em>2024.01.14</em>
+                </div>
+                <h4>하나님을 어떻게 사랑할까?</h4>
+                <b>박성일 목사</b>
               </div>
-              <h4>하나님을 어떻게 사랑할까?</h4>
-              <b>박성일 목사</b>
             </a>
             <a href="#none" class="sermon-card">
-              <img src="/images/sermon_image02.jpg" alt="설교사진2">
-              <div class="card-badge">
-                <span>주일 2부예배</span>
-                <em>2023.12.31</em>
+              <img src="/resources/images/landing/sermon_image02.jpg" alt="설교사진2">
+              <div class="card-desc">
+                <div class="card-badge">
+                  <span>주일 2부예배</span>
+                  <em>2023.12.31</em>
+                </div>
+                <h4>하나님의 평강</h4>
+                <b>이호석 목사</b>
               </div>
-              <h4>하나님의 평강</h4>
-              <b>이호석 목사</b>
             </a>
             <a href="#none" class="sermon-card">
-              <img src="/images/sermon_image03.jpg" alt="설교사진3">
-              <div class="card-badge">
-                <span>주일 3부예배</span>
-                <em>2023.12.31</em>
+              <img src="/resources/images/landing/sermon_image03.jpg" alt="설교사진3">
+              <div class="card-desc">
+                <div class="card-badge">
+                  <span>주일 3부예배</span>
+                  <em>2023.12.31</em>
+                </div>
+                <h4>하나님의 평강</h4>
+                <b>박성일 목사</b>
               </div>
-              <h4>하나님의 평강</h4>
-              <b>박성일 목사</b>
             </a>
             <a href="#none" class="sermon-card">
-              <img src="/images/sermon_image04.jpg" alt="설교사진4">
-              <div class="card-badge">
-                <span>주일 3부예배</span>
-                <em>2023.11.19</em>
+              <img src="/resources/images/landing/sermon_image04.jpg" alt="설교사진4">
+              <div class="card-desc">
+                <div class="card-badge">
+                  <span>주일 3부예배</span>
+                  <em>2023.11.19</em>
+                </div>
+                <h4>참된 감사의 이유: 이제는 내가 아니요</h4>
+                <b>Peter Lillback 총장</b>
               </div>
-              <h4>참된 감사의 이유: 이제는 내가 아니요</h4>
-              <b>Peter Lillback 총장</b>
             </a>
           </div>
-          <button class="btn-viewmore"><i class="fa-solid fa-chevron-right"></i>설교 더보기</button>
+          <button class="btn-viewmore"><i class="fa-solid fa-chevron-right"></i>   설교 더보기</button>
         </div>
       </div>
     </section>
@@ -166,48 +174,54 @@
     <section class="news">
       <div class="news-inner">
         <div class="news-summary">
-          <div class="new heading">
+          <div class="news heading">
             <h1>교회 소식</h1>
-            <em class="font-decor">greetings</em>
             <hr>
           </div>
           <div class="news-contents">
             <table class="news-sum">
-              <tbody>
-                <tr>
-                  <td>쥬빌리 찬양집회 Re:Start_주일 오후 1:45</td>
-                  <td>2024.1.21</td>
-                </tr>
-                <tr>
-                  <td>Jubilee in the City(JC) 사역 재시작</td>
-                  <td>2024.1.21</td>
-                </tr>
-                <tr>
-                  <td>2024 상반기 유아세례</td>
-                  <td>2024.1.21</td>
-                </tr>
-                <tr>
-                  <td>미션 퍼스펙티브스</td>
-                  <td>2024.1.21</td>
-                </tr>
-                <tr>
-                  <td>어린이 AWANA프로그램</td>
-                  <td>2024.1.21</td>
-                </tr>
-              </tbody>
+              <tr>
+                <td>쥬빌리 찬양집회 Re:Start_주일 오후 1:45</td>
+                <td>2024.1.21</td>
+              </tr>
+              <tr>
+                <td>Jubilee in the City(JC) 사역 재시작</td>
+                <td>2024.1.21</td>
+              </tr>
+              <tr>
+                <td>2024 상반기 유아세례</td>
+                <td>2024.1.21</td>
+              </tr>
+              <tr>
+                <td>미션 퍼스펙티브스</td>
+                <td>2024.1.21</td>
+              </tr>
+              <tr>
+                <td>어린이 AWANA프로그램</td>
+                <td>2024.1.21</td>
+              </tr>
             </table>
             <div class="news-cards">
               <a href="#none" class="newscard-item">
-                <i class="fa-solid fa-file"></i>
-                <h3>주보 바로보기<span>더보기<em>→</em></span></h3>
+               <div class="item-title first">
+                  <i class="fa-solid fa-file"></i>
+                  <h3>주보 바로보기</h3>
+               </div>
+               <span>더보기<em> →</em></span>
               </a>
               <a href="#none" class="newscard-item">
-                <i class="fa-solid fa-user-group"></i>
-                <h3>교우 동정<span>더보기<em>→</em></span></h3>
+                <div class="item-title second">
+                  <i class="fa-solid fa-user-group"></i>
+                  <h3>교우 동정</h3>
+                </div>
+                <span>더보기<em> →</em></span>
               </a>
               <a href="#none" class="newscard-item">
-                <i class="fa-solid fa-earth-americas"></i>
-                <h3>미사모 소식<span>더보기<em>→</em></span></h3>
+                <div class="item-title third">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  <h3>미사모 소식</h3>
+                </div>
+                <span>더보기<em> →</em></span>
               </a>
             </div>
           </div>
@@ -217,39 +231,30 @@
     </section>
 
     <section class="groupcare">
+      <div class="groupcare-background">
+        <div class="bg-top"></div>
+        <div class="bg-letter jubilee">JUBILEE</div>
+        <div class="bg-letter church">CHURCH</div>
+      </div>
       <div class="groupcare-inner">
         <div class="groupcare heading">
           <h1>양육&자녀교육</h1>
-          <em class="font-decor">groupcare</em>
           <hr>
-        </div>
-        <div class="groupcare-background">
-          <div class="bg-top"></div>
-          <p class="bg-letter">JUBILEE</p>
-          <p class="bg-letter">CHURCH</p>
         </div>
         <div class="groupcare-contents">
           <div class="cards-internal">
-            <a href="#none">
-              <div class="leftcard igm">
-                <h2>자녀 교육부</h2>
-              </div>
+            <a class="leftcard igm">
+              <h2>자녀 교육부</h2>
             </a>
-            <a href="#none">
-              <div class="leftcard youngadults">
-                <h2>청년부</h2>
-              </div>
+            <a class="leftcard youngadults">
+              <h2>청년부</h2>
             </a>
-            <a href="#none">
-              <div class="leftcard adults">
-                <h2>장년 양육부서</h2>
-              </div>
+            <a class="leftcard adults">
+              <h2>장년<br>양육부서</h2>
             </a>
-            <a href="#none">
-              <div class="leftcard disciples">
-                <h2>제자성경 연구원</h2>
-              </div>
-            </a>             
+            <a class="leftcard disciples">
+              <h2>제자성경<br>연구원</h2>
+            </a>
           </div>
           <div class="cards-external">
             <h4>외부 링크 바로가기</h4>
@@ -271,8 +276,8 @@
     <section class="scripture">
       <div class="scripture-inner">
         <div class="scripture-contents">
-          <p>"</p>
-          <p>너희는 오십년째 해를 거룩하게 하여<br>그 땅에 있는 모든 주민을 위하여 자유를 공포하라<br>이 해는 너희에게 희년이니 너희는 각각 자기의 소유지로 돌아가며<br>각각 자기의 가족에게로 돌아갈지며<span>-레위기 25:10-</span></p>
+          <i class="fa-solid fa-quote-left"></i>
+          <p>너희는 오십년째 해를 거룩하게 하여<br>그 땅에 있는 모든 주민을 위하여 자유를 공포하라<br>이 해는 너희에게 희년이니 너희는 각각 자기의 소유지로 돌아가며<br>각각 자기의 가족에게로 돌아갈지며 <span>-레위기 25:10-</span></p>
         </div>
       </div>
     </section>
@@ -281,7 +286,7 @@
       <div class="footer-inner">
         <div class="footer-contents">
           <div class="church-logo">
-            <img src="/images/church-logo(footer).png" alt="church-logo">
+            <img src="/resources/images/common/church-logo(footer).png" alt="church-logo">
             <div class="church-name">
               <h5>필라델피아 기쁨의 교회</h5>
               <p>Jubilee Presbyterian Church<br>
@@ -289,22 +294,22 @@
             </div>
           </div>
           <div class="church-info">
-            1911 W Marshall St. Norristown, PA 19403<br>TEL: (610) 630-6300  |  FAX: (610) 630-6301<br>Email: info@jubileekapc.org
+            1911 W Marshall St. Norristown, PA 19403<br>TEL : (610) 630-6300 | FAX : (610) 630-6301<br>Email : <a>info@jubileekapc.org</a>
+            <hr>
           </div>
           <div class="church-youtube">
             <a href="#none">
               <div class="youtube-name">
                 <i class="fa-brands fa-youtube"></i>
-                <span>YouTube</span>
+                <h3>YouTube</h3>
               </div>
               <div class="goto-youtube">
-                <p>교회채널로<br>바로가기</p>
-                <i class="fa-solid fa-arrow-pointer"></i>
+                <h4>교회채널로<br>바로가기<i class="fa-solid fa-arrow-pointer"></i></h4>
               </div>
             </a>
           </div>
         </div>
-        <p>Copyright ⓒ 2024 필라델피아 기쁨의 교회 All rights reserved.</p>
+        <p class="copyright">Copyright ⓒ 2024 필라델피아 기쁨의 교회 All rights reserved.</p>
       </div>
     </footer>
 
