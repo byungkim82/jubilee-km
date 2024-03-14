@@ -9,12 +9,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
 
-@font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
 
 @font-face {
   font-family: 'NEXON Lv1 Gothic OTF';
@@ -43,7 +38,7 @@
   --primary-en: 'Roboto', sans-serif;
   --secondary-kr: 'NEXON Lv1 Gothic', sans-serif;
   --secondary-en: 'Poppins', sans-serif;
-  --tertiary-kr: 'S-CoreDream-3Light', sans-serif;
+  --tertiary-kr: 'SCoreDream', sans-serif;
   --intro-title: 'SeoulHangangC', serif;
   --decor-font: 'Ms Madi', serif;
   --background-font:'Bungee Inline', sans-serif; 

@@ -25,10 +25,9 @@
     flex-direction: column;
     background-color: #ffffff;
     position: fixed;
-    top: 0;
-    right: 0;
-    /* right: -200px; (끝나고 -200px로바꿀것) */
-    padding: 70px 0 0 0;
+    top: 2%;
+    right: -200px;
+    padding: 55px 0 0 0;
     width: 200px;
     height: 100vh;
     text-align: left;
@@ -43,11 +42,11 @@
     position: relative;
     padding-inline-start: 0;
     padding: 15px;
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--whitey-gray);
     transition: 0.35s;
     margin: 0;
   }
-  .gnb > ul > li.moreicon:after {
+  .gnb > ul > li:after {
     content: '\f078';
     font-family: 'Font Awesome 6 Free';
     text-align: right;
@@ -55,6 +54,259 @@
     position: absolute;
     right: 15px;
   }
-  .gnb > ul > li:focus {    
+  .gnb > ul > li:before {
+    display: none;
   }
+  .gnb > ul > li > ul > li:hover {
+    background-color: initial;
+    color: initial;
+  }
+  .gnb > ul > li > ul {
+    width: 100%;
+    background-color: var(--creamy-white);
+    left: -1px;
+    display: none;
+    /* active클래스 추가되면 display: block;가 되도록 js바꿀것 */
+  }
+  .gnb > ul > li > ul.active {
+    display: block;
+  }
+  .gnb > ul > li:hover > ul {
+    display: none;
+  }
+  .gnb > ul > li > ul > li {
+    color: var(--deep-latte);
+  }
+  .goyoutube.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .goyoutube a {
+    margin-right: 60px;
+  }
+  .goyoutube img {
+    width: 90px;
+    transform: translateY(15%);
+  }
+  .goyoutube p {
+    display: none;
+  }
+
+  /* trigger */
+  .trigger{
+    display: block;
+    width: 25px;
+    height: 16px;
+    position: absolute;
+    top: 50px;
+    right: 15px;    
+  }
+  .trigger span{
+    background-color: var(--black);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    transition: 0.3s;
+  }
+  .trigger span:nth-child(1){
+    top: 0;
+  }
+  .trigger span:nth-child(2){
+    top: 50%;
+  }
+  .trigger span:nth-child(3){
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2){
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3){   
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .trigger.active span{
+    background-color: #333;
+  }
+
+  /* Main_Intro */
+  .intro {
+    height: 750px;
+    margin-bottom: 320px;
+  }
+  .intro-slider {
+    text-align: center;
+    left: 0;
+  }
+  .slider-heading p, .slider-heading em {
+    margin-bottom: 70px;
+  }
+  .slider-desc {
+    margin-left: 0;
+  }
+  .slider-desc p {
+    margin-bottom: 0;
+  }
+  .slider-desc p:nth-child(2),.slider-desc p:nth-child(3) {
+    display: inline-block;
+    width: 100%;
+  }
+  .slider-desc p:nth-child(3) {
+    padding-left: 0;
+  }
+  .slider-desc p, .slider-desc span {
+    font-weight: 300;
+  }
+  .intro-shortcut {
+    top: 740px;
+    left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .intro-shortcut .mobile-shortcut-bg {
+    width: 100%;
+    height: 240px;
+    background-color: var(--foam-latte);
+    position: absolute;
+    /* opacity: 50%; */
+  }
+  .intro-shortcut .shortcut-item {
+    width: 165px;
+    height: 140px;
+    margin: 10px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+  }
+
+  /* Section_Sermon */
+  .sermon-summary .heading h1:after {
+    opacity: 0;
+  }
+  .sermon-summary .sermon-contents {
+    justify-content: center;
+  }
+  .sermon-contents i {
+    display: block;
+  }
+  .sermon-contents a.sermon-card{
+    display: none;    
+  }
+  .sermon-contents a.sermon-card.selected {
+    display: block;
+  }
+  .sermon-summary .btn-viewmore {
+    margin-top: 30px;
+  }
+
+  /* Section_News */
+  .news-summary .heading h1:after {
+    opacity: 0;
+  }
+  .news-contents {
+    flex-direction: column;
+  }
+  .news-contents .news-sum table {
+    width: 100%;
+    margin-right: 0;
+  }
+  .news-contents .news-cards {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .item-title i {
+    font-size: 24px;
+    transform: translateY(5%)
+  }
+  .item-title h3 {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 15px;
+  }
+  .news-cards .newscard-item {
+    padding: 25px 20px;
+  }
+
+  /* Section_Groupcare */
+  .groupcare .heading h1:after {
+    display: none;
+  }
+  .groupcare-background .bg-top {
+    height: 700px;
+  }
+  .groupcare-background .bg-letter.jubilee {
+    display: none;
+  }
+  .groupcare-background .bg-letter.church {
+    display: none;
+  }
+  .groupcare-contents {
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .cards-internal {
+    flex-wrap: wrap;
+  }
+  .cards-internal .leftcard{
+    width: 47%;
+    height: 250px;
+  }
+  .cards-internal .leftcard:before{
+    width: 100%;
+  }
+  .cards-internal .leftcard.youngadults, .cards-internal .leftcard.disciples {
+    margin-right: 0;
+  }
+  .cards-internal h2, .cards-external h2 {
+    font-size: 24px;
+  }
+  .cards-internal .leftcard.adults {
+    margin-top: 10px;
+  }
+  .cards-internal .leftcard.disciples {
+    margin-top: 25px;
+  }
+  .cards-external h4 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .cards-external {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .cards-external .rightcard {
+    width: 100%;
+  }
+
+  /* Section_Scripture */
+  .scripture-contents {
+    padding-right: 15px;
+    top: 15%;
+    text-align: center;
+    left: 0;
+  }
+  .scripture-contents p {
+    font-size: 13px;
+    letter-spacing: -1px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 0 ;
+  }
+  .footer-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .church-info {
+    margin-top: 60px;
+    letter-spacing: normal;
+  }
+  .church-youtube {
+    margin-bottom: 60px;
+  }
+
 }
