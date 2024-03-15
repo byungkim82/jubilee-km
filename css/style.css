@@ -462,6 +462,9 @@ nav {
 /* .intro-fourth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(3) {
   display: inline;
 } */
+.intro-fourth .slider-desc p:nth-child(2) em {
+  font-style: normal;
+}
 
 .intro-fourth .slider-desc p:nth-child(3) {
   padding-left: 5px;
@@ -520,6 +523,10 @@ nav {
 
 .intro-fifth .slider-desc p:first-child {
   margin-left: 30px;
+}
+
+.intro-fifth .slider-desc p:first-child em {
+  font-style: normal;
 }
 
 .intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(3) {
@@ -589,6 +596,10 @@ nav {
   display: inline;
 }
 
+.intro-sixth .slider-desc p:first-child em {
+  font-style: normal;
+}
+
 .intro-sixth .slider-desc p:nth-child(3) {
   padding-left: 5px;
 }
@@ -646,6 +657,10 @@ nav {
   display: inline;
 } */
 
+.intro-seventh .slider-desc p:first-child em {
+  font-style: normal;
+}
+
 .intro-seventh .slider-desc p:nth-child(2) {
   padding-left: 80px;
 }
@@ -657,8 +672,6 @@ nav {
 .intro-seventh .slider-desc span {
   font-size: 24px;
 }
-
-
 
 .intro-shortcut {
   position: absolute;
@@ -746,7 +759,7 @@ section {
 .sermon-contents i {
   position: absolute;
   top: 50%;
-  font-size: 24px;
+  font-size: 26px;
   display: none;
   transform: translateY(-50%);
 }
@@ -933,6 +946,7 @@ section.news {
 }
 
 .item-title i {
+  width: 30px;
   font-size: 28px;
   transform: translateY(5%)
 }

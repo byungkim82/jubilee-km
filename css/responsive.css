@@ -163,16 +163,26 @@
   .intro .slider-desc p, .intro .slider-desc span, .intro-second .slider-desc p, .intro-second .slider-desc span, .intro-third .slider-desc p, .intro-third .slider-desc span, .intro-fourth .slider-desc p, .intro-fourth .slider-desc span, .intro-fifth .slider-desc p, .intro-fifth .slider-desc span, .intro-sixth .slider-desc p, .intro-sixth .slider-desc span, .intro-seventh .slider-desc p, .intro-seventh .slider-desc span {
     font-weight: 300;
   }
-  /* intro-second&third&fourth */
+  /* intro-second&third&fourth&fifth */
   .intro-second .slider-desc p:first-child, .intro-third .slider-desc p:first-child, .intro-fourth .slider-desc p:first-child, .intro-fifth .slider-desc p:first-child, .intro-sixth .slider-desc p:first-child {
     margin-left: 0;
   }
-  .intro-fourth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(1), .intro-seventh .slider-desc p:nth-child(3) {
+  .intro-fourth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(1), .intro-seventh .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:first-child em {
+    line-height: 2;
+  }
+  .intro-fifth .slider-desc p:first-child em, .intro-sixth .slider-desc p:first-child em, .intro-seventh .slider-desc p:first-child em, .intro-fourth .slider-desc p:nth-child(2) em {
+    display: block;
+  }
+  .intro-seventh .slider-desc p:nth-child(2)  {
+    margin-top: 0;
+  }
+  .intro-sixth .slider-desc p:nth-child(2),.intro-fifth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(2) {
+    margin-top: 8px;
+  }
+  .intro-seventh .slider-desc p {
     line-height: 2;
   }
   
-
-
   .intro-shortcut {
     top: 740px;
     left: 0;
@@ -187,11 +197,17 @@
     /* opacity: 50%; */
   }
   .intro-shortcut .shortcut-item {
-    width: 165px;
+    width: 160px;
     height: 140px;
     margin: 10px;
     margin-top: -25px;
     margin-bottom: 35px;
+  }
+  .intro-shortcut .shortcut-item i {
+    font-size: 50px;
+  }
+  .intro-shortcut .shortcut-item h4 {
+    font-size: 24px;
   }
 
   /* Section_Sermon */
@@ -205,7 +221,8 @@
     display: block;
   }
   .sermon-contents a.sermon-card{
-    display: none;    
+    display: none;  
+    width: 280px;  
   }
   .sermon-contents a.sermon-card.selected {
     display: block;
@@ -264,7 +281,7 @@
     flex-wrap: wrap;
   }
   .cards-internal .leftcard{
-    width: 47%;
+    width: 46%;
     height: 250px;
   }
   .cards-internal .leftcard:before{
@@ -299,11 +316,11 @@
     padding-right: 15px;
     top: 15%;
     text-align: center;
-    left: 0;
+    left: 2%;
   }
   .scripture-contents p {
     font-size: 13px;
-    letter-spacing: -1px;
+    letter-spacing: -1.2px;
   }
 
   /* Footer */
@@ -322,4 +339,8 @@
     margin-bottom: 60px;
   }
 
+  /* Go-to-top */
+  .goto-top {
+    display: none;
+  }
 }
