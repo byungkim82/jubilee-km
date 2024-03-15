@@ -133,33 +133,46 @@
   }
 
   /* Main_Intro */
-  .intro {
+  /* intro-common */
+  .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh {
     height: 750px;
     margin-bottom: 320px;
   }
-  .intro-slider {
+  .intro .intro-slider, .intro-second .intro-slider, .intro-third .intro-slider, .intro-fourth .intro-slider, .intro-fifth .intro-slider, .intro-sixth .intro-slider, .intro-seventh .intro-slider {
     text-align: center;
     left: 0;
+    top: 170px;
+    width: 100%;
   }
-  .slider-heading p, .slider-heading em {
+  .intro .slider-heading p, .intro .slider-heading em, .intro-second .slider-heading p, .intro-second .slider-heading em, .intro-third .slider-heading p, .intro-third .slider-heading em, .intro-fourth .slider-heading p, .intro-fourth .slider-heading em, .intro-fifth .slider-heading p, .intro-fifth .slider-heading em, .intro-sixth .slider-heading p, .intro-sixth .slider-heading em, .intro-seventh .slider-heading p, .intro-seventh .slider-heading em {
     margin-bottom: 70px;
   }
-  .slider-desc {
+  .intro .slider-desc, .intro-second .slider-desc, .intro-third .slider-desc, .intro-fourth .slider-desc, .intro-fifth .slider-desc, .intro-sixth .slider-desc, .intro-seventh .slider-desc  {
     margin-left: 0;
   }
-  .slider-desc p {
+  .intro .slider-desc p, .intro-second .slider-desc p, .intro-third .slider-desc p, .intro-fourth .slider-desc p, .intro-fifth .slider-desc p, .intro-sixth .slider-desc p, .intro-seventh .slider-desc p {
     margin-bottom: 0;
   }
-  .slider-desc p:nth-child(2),.slider-desc p:nth-child(3) {
+  .intro .slider-desc p:nth-child(2), .intro .slider-desc p:nth-child(3), .intro-second .slider-desc p:nth-child(2), .intro-second .slider-desc p:nth-child(3), .intro-third .slider-desc p:nth-child(2), .intro-third .slider-desc p:nth-child(3),.intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:nth-child(2), .intro-sixth .slider-desc p:nth-child(3) {
     display: inline-block;
     width: 100%;
   }
-  .slider-desc p:nth-child(3) {
+  .intro .slider-desc p:nth-child(3), .intro-second .slider-desc p:nth-child(3), .intro-third .slider-desc p:nth-child(3), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(2) {
     padding-left: 0;
   }
-  .slider-desc p, .slider-desc span {
+  .intro .slider-desc p, .intro .slider-desc span, .intro-second .slider-desc p, .intro-second .slider-desc span, .intro-third .slider-desc p, .intro-third .slider-desc span, .intro-fourth .slider-desc p, .intro-fourth .slider-desc span, .intro-fifth .slider-desc p, .intro-fifth .slider-desc span, .intro-sixth .slider-desc p, .intro-sixth .slider-desc span, .intro-seventh .slider-desc p, .intro-seventh .slider-desc span {
     font-weight: 300;
   }
+  /* intro-second&third&fourth */
+  .intro-second .slider-desc p:first-child, .intro-third .slider-desc p:first-child, .intro-fourth .slider-desc p:first-child, .intro-fifth .slider-desc p:first-child, .intro-sixth .slider-desc p:first-child {
+    margin-left: 0;
+  }
+  .intro-fourth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(1), .intro-seventh .slider-desc p:nth-child(3) {
+    line-height: 2;
+  }
+  
+
+
   .intro-shortcut {
     top: 740px;
     left: 0;
