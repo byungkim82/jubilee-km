@@ -1,6 +1,6 @@
 /* Import local CSS */
-@import url(/css/variables.css);
-@import url(/css/reset.css);
+@import url(/styles/variables.css);
+@import url(/styles/reset.css);
 
 html { scroll-behavior: smooth; }
 
