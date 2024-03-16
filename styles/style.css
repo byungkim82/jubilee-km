@@ -228,12 +228,17 @@ nav {
 
 /* Main_Intro */
 /* intro-first */
+.slide {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+
 .intro {
   height: 880px;
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image01.png) no-repeat center center;
   background-size: cover; 
-  /* display: none;  */
 }
 
 .intro .intro-slider {
@@ -292,7 +297,6 @@ nav {
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image02.png) no-repeat center center;
   background-size: cover;  
-  display: none;
 }
 
 .intro-second .intro-slider {
@@ -356,7 +360,6 @@ nav {
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image03.png) no-repeat center center;
   background-size: cover;  
-  display: none;
 }
 
 .intro-third .intro-slider {
@@ -413,7 +416,6 @@ nav {
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image04.png) no-repeat center center;
   background-size: cover;  
-  display: none;
 }
 
 .intro-fourth .intro-slider {
@@ -480,7 +482,6 @@ nav {
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image05.png) no-repeat center center;
   background-size: cover; 
-  display: none; 
 }
 
 .intro-fifth .intro-slider {
@@ -547,7 +548,6 @@ nav {
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image06.png) no-repeat center center;
   background-size: cover; 
-  display: none; 
 }
 
 .intro-sixth .intro-slider {
@@ -614,7 +614,6 @@ nav {
   margin-bottom: 100px;
   background: url(/resources/images/landing/intro_image07.png) no-repeat center center;
   background-size: cover; 
-  display: none; 
 }
 
 .intro-seventh .intro-slider {
