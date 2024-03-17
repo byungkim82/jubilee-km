@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSlides() {
         let i;
         let slides = document.getElementsByClassName("slide");
+        let indicators = document.querySelector(".indicator-inner").getElementsByTagName("i");
         let currentSlide = slides[slideIndex % slides.length];
 
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
             slides[i].style.opacity = 0;
+            indicators[i].classList.remove("active");
         }
         slideIndex++;
         
@@ -22,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let nextSlide = slides[slideIndex - 1];
         nextSlide.style.display = "block";
+        indicators[slideIndex-1].classList.add("active");
         setTimeout(() => {
             nextSlide.style.opacity = 1;
         }, 10);

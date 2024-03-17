@@ -680,7 +680,6 @@ nav {
 }
 
 .slide-indicator {
-  color: var(--latte);
   z-index: 50;
   font-size: 14px;
   transform: translateY(-800%);
@@ -688,9 +687,10 @@ nav {
 
 .slide-indicator i {
   padding: 0 4px;
+  color: var(--latte);
 }
 
-.slide-indicator i:nth-child(1) {
+.slide-indicator i.active {
   color: #ffffff;
 }
 
