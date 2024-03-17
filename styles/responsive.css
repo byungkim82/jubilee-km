@@ -134,7 +134,7 @@
 
   /* Main_Intro */
   /* intro-common */
-  .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh {
+  .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh, .intro-background {
     height: 750px;
     margin-bottom: 320px;
   }

@@ -234,6 +234,13 @@ nav {
   transition: opacity 1s ease-in-out;
 }
 
+.intro-background {
+  height: 880px;
+  background: url(/resources/images/landing/intro_image00.png) no-repeat center center;
+  background-size: cover; 
+  margin-bottom: 100px;
+}
+
 .intro {
   height: 880px;
   margin-bottom: 100px;
