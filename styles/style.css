@@ -679,6 +679,21 @@ nav {
   font-size: 24px;
 }
 
+.slide-indicator {
+  color: var(--latte);
+  z-index: 50;
+  font-size: 14px;
+  transform: translateY(-800%);
+}
+
+.slide-indicator i {
+  padding: 0 4px;
+}
+
+.slide-indicator i:nth-child(1) {
+  color: #ffffff;
+}
+
 .intro-shortcut {
   position: absolute;
   top: 770px;

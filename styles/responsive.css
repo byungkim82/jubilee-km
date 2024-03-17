@@ -182,7 +182,12 @@
   .intro-seventh .slider-desc p {
     line-height: 2;
   }
-  
+  .slide-indicator {
+    top: 670px;
+    justify-content: center;
+    left: 0;
+    text-align: center; 
+  }
   .intro-shortcut {
     top: 740px;
     left: 0;
