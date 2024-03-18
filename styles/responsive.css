@@ -43,6 +43,10 @@
   }
 
   /* gnb-mobile */
+  .gnb-mobile {
+    display: none;
+  }
+
   .gnb-mobile ul li {
     list-style: none;
   }
@@ -169,7 +173,7 @@
     display: inline-block;
     width: 100%;
   }
-  .intro .slider-desc p:nth-child(3), .intro-second .slider-desc p:nth-child(3), .intro-third .slider-desc p:nth-child(3), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(2) {
+  .intro .slider-desc p:nth-child(2), .intro .slider-desc p:nth-child(3), .intro-second .slider-desc p:nth-child(3), .intro-third .slider-desc p:nth-child(3), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(2) {
     padding-left: 0;
   }
   .intro .slider-desc p, .intro .slider-desc span, .intro-second .slider-desc p, .intro-second .slider-desc span, .intro-third .slider-desc p, .intro-third .slider-desc span, .intro-fourth .slider-desc p, .intro-fourth .slider-desc span, .intro-fifth .slider-desc p, .intro-fifth .slider-desc span, .intro-sixth .slider-desc p, .intro-sixth .slider-desc span, .intro-seventh .slider-desc p, .intro-seventh .slider-desc span {
