@@ -157,7 +157,7 @@
   /* intro-common */
   .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh, .intro-background {
     height: 750px;
-    margin-bottom: 320px;
+    margin-bottom: 300px;
   }
   .intro .intro-slider, .intro-second .intro-slider, .intro-third .intro-slider, .intro-fourth .intro-slider, .intro-fifth .intro-slider, .intro-sixth .intro-slider, .intro-seventh .intro-slider {
     text-align: center;
