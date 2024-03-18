@@ -260,7 +260,8 @@ nav {
 .slide {
   opacity: 0;
   display: none;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 .intro-background {
