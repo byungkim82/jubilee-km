@@ -27,6 +27,9 @@
   .gnb-mobile {
     display: block;
   }
+  .gnb-mobile.active {
+    display: block;
+  }
   .goyoutube.active {
     opacity: 0;
     visibility: hidden;
@@ -84,19 +87,21 @@
     transform: rotate(180deg);
   }
   .gnb-mobile ul .sub-menu {
-    height: auto;
     color: var(--deep-latte);
     font-size: 15px;
     font-weight: 500;
     text-align: left;
     padding-inline-start: 0;
     background-color: var(--whitey-gray);
-    padding: 6px 0;
-    display: none;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
   }
   .gnb-mobile ul .sub-menu.active {
-    display: block;
-    transition: 1.5s;
+    max-height: 500px;
+    opacity: 1;
   }
   .gnb-mobile ul .sub-menu a {
     display: block;

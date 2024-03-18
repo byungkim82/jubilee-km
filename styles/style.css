@@ -200,6 +200,10 @@ nav {
   display: none;
 }
 
+.gnb-mobile.active {
+  display: none;
+}
+
 /* go-youtube button*/
 .goyoutube {
   flex: 1;
