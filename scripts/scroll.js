@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target);
             }
         })
-    }, { threshold: 0.2 });
+    }, { threshold: 0.15 });
 
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {

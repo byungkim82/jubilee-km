@@ -186,7 +186,7 @@ nav {
   top: 55px;
   padding-inline-start: 0;
   opacity: 0;
-  transition: 0.35s;
+  transition: 0.4s;
 }
 
 .gnb > ul > li:hover > ul {
@@ -267,12 +267,12 @@ nav {
   height: 880px;
   background: url(/resources/images/landing/intro_image00.png) no-repeat center center;
   background-size: cover; 
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .intro {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image01.png) no-repeat center center;
   background-size: cover; 
 }
@@ -336,7 +336,7 @@ nav {
 /* intro-second */
 .intro-second {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image02.png) no-repeat center center;
   background-size: cover;  
 }
@@ -401,7 +401,7 @@ nav {
 /* intro-third */
 .intro-third {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image03.png) no-repeat center center;
   background-size: cover;  
 }
@@ -458,7 +458,7 @@ nav {
 /* intro-fourth */
 .intro-fourth {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image04.png) no-repeat center center;
   background-size: cover;  
 }
@@ -526,7 +526,7 @@ nav {
 /* intro-fifth */
 .intro-fifth {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image05.png) no-repeat center center;
   background-size: cover; 
 }
@@ -594,7 +594,7 @@ nav {
 /* intro-sixth */
 .intro-sixth {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image06.png) no-repeat center center;
   background-size: cover; 
 }
@@ -662,7 +662,7 @@ nav {
 /* intro-seventh */
 .intro-seventh {
   height: 880px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   background: url(/resources/images/landing/intro_image07.png) no-repeat center center;
   background-size: cover; 
 }
@@ -796,10 +796,13 @@ section {
 
 section.floating {
   animation-name: floating-effect;
-  animation-duration: 1.7s;
+  animation-duration: 2s;
 }
 
 /* Section_Sermon */
+.sermons {
+  padding-top: 100px;
+}
 .sermon-summary .heading h1 {
   font-weight: 600;
   position: relative;
@@ -915,7 +918,7 @@ a.sermon-card {
 /* Section_News */
 section.news {
   background-color: var(--creamy-white);
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .news-summary .heading h1 {
@@ -1077,7 +1080,7 @@ section.news {
 /* Section_Groupcare */
 section.groupcare {
   background-color: var(--white);
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .groupcare .heading h1 {
