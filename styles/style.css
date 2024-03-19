@@ -273,26 +273,26 @@ nav {
 .intro {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image01.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image01.jpg) no-repeat center center;
   background-size: cover; 
 }
 
 .intro .intro-slider {
   color: white;
   position: absolute;
-  top: 130px;
+  top: 150px;
 }
 
 .intro .slider-heading p, .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
 
 .intro .slider-heading b {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-weight: normal;    
   font-size: 45px;
   color: var(--foam-latte);
@@ -337,7 +337,7 @@ nav {
 .intro-second {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image02.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image02.jpg) no-repeat center center;
   background-size: cover;  
 }
 
@@ -350,14 +350,14 @@ nav {
 
 .intro-second .slider-heading p, .intro-second .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
 
 .intro-second .slider-heading b {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-weight: normal;    
   font-size: 45px;
   color: var(--foam-latte);
@@ -402,7 +402,7 @@ nav {
 .intro-third {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image03.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image03.jpg) no-repeat center center;
   background-size: cover;  
 }
 
@@ -415,7 +415,7 @@ nav {
 
 .intro-third .slider-heading p, .intro-third .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
@@ -459,7 +459,7 @@ nav {
 .intro-fourth {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image04.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image04.jpg) no-repeat center center;
   background-size: cover;  
 }
 
@@ -472,14 +472,14 @@ nav {
 
 .intro-fourth .slider-heading p, .intro-fourth .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
 
 .intro-fourth .slider-heading b {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-weight: normal;    
   font-size: 45px;
   color: var(--foam-latte);
@@ -527,7 +527,7 @@ nav {
 .intro-fifth {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image05.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image05.jpg) no-repeat center center;
   background-size: cover; 
 }
 
@@ -539,14 +539,14 @@ nav {
 
 .intro-fifth .slider-heading p, .intro-fifth .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
 
 .intro-fifth .slider-heading b {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-weight: normal;    
   font-size: 45px;
   color: var(--foam-latte);
@@ -595,7 +595,7 @@ nav {
 .intro-sixth {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image06.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image06.jpg) no-repeat center center;
   background-size: cover; 
 }
 
@@ -607,14 +607,14 @@ nav {
 
 .intro-sixth .slider-heading p, .intro-sixth .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
 
 .intro-sixth .slider-heading b {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-weight: normal;    
   font-size: 45px;
   color: var(--foam-latte);
@@ -663,7 +663,7 @@ nav {
 .intro-seventh {
   height: 880px;
   margin-bottom: 30px;
-  background: url(/resources/images/landing/intro_image07.png) no-repeat center center;
+  background: url(/resources/images/landing/intro_image07.jpg) no-repeat center center;
   background-size: cover; 
 }
 
@@ -676,7 +676,7 @@ nav {
 
 .intro-seventh .slider-heading p, .intro-seventh .slider-heading em {
   font-family: var(--intro-title);
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   font-size: 55px;
   margin-bottom: 40px;
 }
@@ -803,6 +803,7 @@ section.floating {
 .sermons {
   padding-top: 100px;
 }
+
 .sermon-summary .heading h1 {
   font-weight: 600;
   position: relative;

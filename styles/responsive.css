@@ -236,6 +236,16 @@
     font-size: 24px;
   }
 
+  /* section_common */
+
+  section.sermons {
+    padding-top: 0;
+  }
+
+  section.news, section.groupcare {
+    padding-top: 50px;
+  }
+
   /* Section_Sermon */
   .sermon-summary .heading h1:after {
     opacity: 0;
