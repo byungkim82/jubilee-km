@@ -237,6 +237,13 @@
   }
 
   /* section_common */
+  section {
+    text-align: center; 
+  }
+  
+  section.floating {
+    animation-name: none;
+  }
 
   section.sermons {
     padding-top: 0;
@@ -257,8 +264,10 @@
     display: block;
   }
   .sermon-contents a.sermon-card{
-    display: none;  
-    width: 280px;  
+    display: none;
+    opacity: 0;
+    width: 280px;
+    transition: opacity 0.3s ease-in;   
   }
   .sermon-contents a.sermon-card.selected {
     display: block;
