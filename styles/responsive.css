@@ -257,8 +257,10 @@
     display: block;
   }
   .sermon-contents a.sermon-card{
-    display: none;  
-    width: 280px;  
+    display: none;
+    opacity: 0;
+    width: 280px;
+    transition: opacity 0.3s ease-in;   
   }
   .sermon-contents a.sermon-card.selected {
     display: block;
