@@ -237,6 +237,13 @@
   }
 
   /* section_common */
+  section {
+    text-align: center; 
+  }
+  
+  section.floating {
+    animation-name: none;
+  }
 
   section.sermons {
     padding-top: 0;
