@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sermonCards = document.querySelectorAll(".sermon-card");
 
     let currentIndex = 0;
+    let lastMobileState = isMobile();
 
     function isMobile() {
         return window.innerWidth <= 768;
@@ -45,12 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSermonCards();
 
     window.addEventListener('resize', function() {
-        if (!isMobile()) {
-            sermonCards.forEach(card => {
-                card.style.opacity = 1;
-            });
-        } else {
-            updateSermonCards();
+        const currentMobileState = isMobile();
+        if (currentMobileState !== lastMobileState) {
+            if (!currentMobileState) {
+                sermonCards.forEach(card => {
+                    card.style.opacity = 1;
+                });
+            }
+            lastMobileState = currentMobileState;
         }
     });
 });
