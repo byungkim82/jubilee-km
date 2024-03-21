@@ -1,0 +1,391 @@
+/* Mobile responsive */
+
+@media(max-width:768px) {
+
+  /* common */
+  [class*=inner] {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  /* header */
+  .top-banner {
+    width: 100%;
+    padding-left: 15px;
+  }
+  nav {
+    width: 100%;    
+    padding: 0 15px;
+  }
+  .gnb {
+    display: none;
+  }
+  .gnb-mobile {
+    display: block;
+  }
+  .gnb-mobile.active {
+    display: block;
+  }
+  .goyoutube.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .goyoutube a {
+    margin-right: 60px;
+  }
+  .goyoutube img {
+    width: 90px;
+    transform: translateY(15%);
+  }
+  .goyoutube p {
+    display: none;
+  }
+
+  /* gnb-mobile */
+  .gnb-mobile {
+    display: none;
+  }
+
+  .gnb-mobile ul li {
+    list-style: none;
+  }
+  .gnb-mobile > ul  {
+    background-color: #ffffff;
+    position: absolute;
+    padding-inline-start: 0;
+    padding: 55px 0 0 0;
+    height: 100vh;
+    top: 13px;
+    right: 0;
+    width: 200px;
+    box-shadow: -3px 3px 10px rgba(128, 128, 128, 0.295);
+    z-index: 100;
+  }
+  .gnb-mobile > ul > li {
+    color: var(--black);
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 20px;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gnb-mobile ul li i {
+    font-size: 12px;
+    text-align: right;
+    right: 20px;
+    color: var(--latte);
+    transform: translateY(10%);
+  }
+  .gnb-mobile ul li i.active {
+    transform: rotate(180deg);
+  }
+  .gnb-mobile ul .sub-menu {
+    color: var(--deep-latte);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    padding-inline-start: 0;
+    background-color: var(--whitey-gray);
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  .gnb-mobile ul .sub-menu.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+  .gnb-mobile ul .sub-menu a {
+    display: block;
+    padding: 6px 20px;
+  }
+
+  /* trigger */
+  .trigger{
+    display: block;
+    width: 25px;
+    height: 16px;
+    position: absolute;
+    top: 50px;
+    right: 15px;    
+    z-index: 101;
+  }
+  .trigger span{
+    background-color: var(--black);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    transition: 0.3s;
+  }
+  .trigger span:nth-child(1){
+    top: 0;
+  }
+  .trigger span:nth-child(2){
+    top: 50%;
+  }
+  .trigger span:nth-child(3){
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2){
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3){   
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .trigger.active span{
+    background-color: #333;
+  }
+  /* trigger-layover */
+  .trigger-layover.active {
+   display: block;
+  }
+  
+  /* Main_Intro */
+  /* intro-common */
+  .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh, .intro-background {
+    height: 750px;
+    margin-bottom: 300px;
+  }
+  .intro .intro-slider, .intro-second .intro-slider, .intro-third .intro-slider, .intro-fourth .intro-slider, .intro-fifth .intro-slider, .intro-sixth .intro-slider, .intro-seventh .intro-slider {
+    text-align: center;
+    left: 0;
+    top: 170px;
+    width: 100%;
+  }
+  .intro .slider-heading p, .intro .slider-heading em, .intro-second .slider-heading p, .intro-second .slider-heading em, .intro-third .slider-heading p, .intro-third .slider-heading em, .intro-fourth .slider-heading p, .intro-fourth .slider-heading em, .intro-fifth .slider-heading p, .intro-fifth .slider-heading em, .intro-sixth .slider-heading p, .intro-sixth .slider-heading em, .intro-seventh .slider-heading p, .intro-seventh .slider-heading em {
+    margin-bottom: 70px;
+  }
+  .intro .slider-desc, .intro-second .slider-desc, .intro-third .slider-desc, .intro-fourth .slider-desc, .intro-fifth .slider-desc, .intro-sixth .slider-desc, .intro-seventh .slider-desc  {
+    margin-left: 0;
+  }
+  .intro .slider-desc p, .intro-second .slider-desc p, .intro-third .slider-desc p, .intro-fourth .slider-desc p, .intro-fifth .slider-desc p, .intro-sixth .slider-desc p, .intro-seventh .slider-desc p {
+    margin-bottom: 0;
+  }
+  .intro .slider-desc p:nth-child(2), .intro .slider-desc p:nth-child(3), .intro-second .slider-desc p:nth-child(2), .intro-second .slider-desc p:nth-child(3), .intro-third .slider-desc p:nth-child(2), .intro-third .slider-desc p:nth-child(3),.intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:nth-child(2), .intro-sixth .slider-desc p:nth-child(3) {
+    display: inline-block;
+    width: 100%;
+  }
+  .intro .slider-desc p:nth-child(2), .intro .slider-desc p:nth-child(3), .intro-second .slider-desc p:nth-child(3), .intro-third .slider-desc p:nth-child(3), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(3), .intro-seventh .slider-desc p:nth-child(2) {
+    padding-left: 0;
+  }
+  .intro .slider-desc p, .intro .slider-desc span, .intro-second .slider-desc p, .intro-second .slider-desc span, .intro-third .slider-desc p, .intro-third .slider-desc span, .intro-fourth .slider-desc p, .intro-fourth .slider-desc span, .intro-fifth .slider-desc p, .intro-fifth .slider-desc span, .intro-sixth .slider-desc p, .intro-sixth .slider-desc span, .intro-seventh .slider-desc p, .intro-seventh .slider-desc span {
+    font-weight: 300;
+  }
+  /* intro-second&third&fourth&fifth */
+  .intro-second .slider-desc p:first-child, .intro-third .slider-desc p:first-child, .intro-fourth .slider-desc p:first-child, .intro-fifth .slider-desc p:first-child, .intro-sixth .slider-desc p:first-child {
+    margin-left: 0;
+  }
+  .intro-fourth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(3), .intro-fifth .slider-desc p:nth-child(2), .intro-fifth .slider-desc p:nth-child(1), .intro-seventh .slider-desc p:nth-child(3), .intro-sixth .slider-desc p:first-child em {
+    line-height: 2;
+  }
+  .intro-fifth .slider-desc p:first-child em, .intro-sixth .slider-desc p:first-child em, .intro-seventh .slider-desc p:first-child em, .intro-fourth .slider-desc p:nth-child(2) em {
+    display: block;
+  }
+  .intro-seventh .slider-desc p:nth-child(2)  {
+    margin-top: 0;
+  }
+  .intro-sixth .slider-desc p:nth-child(2),.intro-fifth .slider-desc p:nth-child(2), .intro-fourth .slider-desc p:nth-child(2) {
+    margin-top: 8px;
+  }
+  .intro-seventh .slider-desc p {
+    line-height: 2;
+  }
+  .slide-indicator {
+    top: 670px;
+    justify-content: center;
+    left: 0;
+    text-align: center; 
+  }
+  .intro-shortcut {
+    top: 740px;
+    left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .intro-shortcut .mobile-shortcut-bg {
+    width: 100%;
+    height: 240px;
+    background-color: var(--foam-latte);
+    position: absolute;
+    /* opacity: 50%; */
+  }
+  .intro-shortcut .shortcut-item {
+    width: 160px;
+    height: 140px;
+    margin: 10px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+  }
+  .intro-shortcut .shortcut-item i {
+    font-size: 50px;
+  }
+  .intro-shortcut .shortcut-item h4 {
+    font-size: 24px;
+  }
+
+  /* section_common */
+  section {
+    text-align: center; 
+  }
+  
+  section.floating {
+    animation-name: none;
+  }
+
+  section.sermons {
+    padding-top: 0;
+  }
+
+  section.news, section.groupcare {
+    padding-top: 50px;
+  }
+
+  /* Section_Sermon */
+  .sermon-summary .heading h1:after {
+    opacity: 0;
+  }
+  .sermon-summary .sermon-contents {
+    justify-content: center;
+  }
+  .sermon-contents i {
+    display: block;
+  }
+  .sermon-contents a.sermon-card{
+    display: none;
+    opacity: 0;
+    width: 280px;
+    transition: opacity 0.3s ease-in;   
+  }
+  .sermon-contents a.sermon-card.selected {
+    display: block;
+  }
+  .sermon-summary .btn-viewmore {
+    margin-top: 30px;
+  }
+
+  /* Section_News */
+  .news-summary .heading h1:after {
+    opacity: 0;
+  }
+  .news-contents {
+    flex-direction: column;
+  }
+  .news-contents .news-sum table {
+    width: 100%;
+    margin-right: 0;
+  }
+  .news-contents .news-cards {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .item-title i {
+    font-size: 24px;
+    transform: translateY(5%)
+  }
+  .item-title h3 {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 15px;
+  }
+  .news-cards .newscard-item {
+    padding: 25px 20px;
+  }
+
+  /* Section_Groupcare */
+  .groupcare .heading h1:after {
+    display: none;
+  }
+  .groupcare-background .bg-top {
+    height: 700px;
+  }
+  .groupcare-background .bg-letter.jubilee {
+    display: none;
+  }
+  .groupcare-background .bg-letter.church {
+    display: none;
+  }
+  .groupcare-contents {
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .cards-internal {
+    flex-wrap: wrap;
+  }
+  .cards-internal .leftcard{
+    width: 46%;
+    height: 250px;
+  }
+  .cards-internal .leftcard:before{
+    width: 100%;
+  }
+  .cards-internal .leftcard.youngadults, .cards-internal .leftcard.disciples {
+    margin-right: 0;
+  }
+  .cards-internal h2, .cards-external h2 {
+    font-size: 24px;
+  }
+  .cards-internal .leftcard.adults {
+    margin-top: 10px;
+  }
+  .cards-internal .leftcard.disciples {
+    margin-top: 25px;
+  }
+  .cards-external h4 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .cards-external {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .cards-external .rightcard {
+    width: 100%;
+  }
+
+  /* Section_Scripture */
+  .scripture-contents {
+    padding-right: 15px;
+    top: 15%;
+    text-align: center;
+    left: 2%;
+  }
+  .scripture-contents p {
+    font-size: 13px;
+    letter-spacing: -1.2px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 0 ;
+  }
+  .footer-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .church-info {
+    margin-top: 60px;
+    letter-spacing: normal;
+  }
+  .church-youtube {
+    margin-bottom: 60px;
+  }
+
+  /* Go-to-top */
+  .goto-top {
+    display: none;
+  }
+}
