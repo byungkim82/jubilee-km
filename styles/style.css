@@ -795,7 +795,7 @@ padding-top: 20px
 }
 
 /* Section common */
-section {
+.landing section {
   text-align: center; 
 }
 
@@ -1480,4 +1480,150 @@ footer .copyright {
 .goto-top.active{
   bottom: 40px;
   opacity: 1;
+}
+
+
+/* #### Introduction Pages #### */
+
+/* Pages-common-styles */
+.page-banner {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.page-banner:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background-color: var(--black);
+  opacity: 65%;
+}
+
+.page-banner h1 {
+  font-size: 40px;
+  color: #fff;
+  padding-top: 110px;
+  text-align: center;
+  z-index: 10;
+}
+
+section .page-contents {
+  padding: 70px 0;
+}
+
+/* Worship-services page */
+.worship-services.page-banner {
+  background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.worship-services-info {
+  background: url(/resources/images/introduction/worship-background.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%; 
+  height: 1130px;
+}
+
+.worship-services-info:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: #fff;
+  opacity: 90%;
+}
+
+.worship-services-info .worship-inner {
+  position: relative;
+  text-align: center;
+}
+
+.worship-services-info .worship-inner table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.worship-services-info h1 {
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.worship-services-info table {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.worship-services-info tr {
+  height: 60px;
+  border-bottom: 1px solid var(--light-gray);
+  transition: 0.35s;
+}
+
+.worship-services-info tr:hover {
+  background-color: white;
+}
+
+.worship-services-info table tr:first-child {
+  border-top: 3px solid var(--latte);
+}
+
+.worship-services-info table tr:nth-child(4) {
+  border-bottom: 2px solid var(--latte);
+}
+
+.worship-services-info table tr:last-child {
+  border-bottom: 3px solid var(--latte);
+}
+
+.worship-services-info table tr td:nth-child(2) {
+  color: var(--deep-latte);
+}
+
+.worship-services-info table tr td:nth-child(3) {
+  color: var(--dark-gray);
+}
+
+.worship-lower {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.worship-lower table {
+  font-size: 16px;
+}
+
+.worship-lower tr td:first-child {
+  font-size: 20px;
+}
+
+.worship-left {
+  flex: 1;
+}
+
+.worship-right {
+  flex: 1;
+}
+
+.worship-lower tr td span {
+  font-size: 12px;
+}
+
+/* Ministry-values page */
+.ministry-values.page-banner {
+  background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
+  background-size: cover; 
 }

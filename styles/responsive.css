@@ -153,6 +153,8 @@
    display: block;
   }
   
+  /* ###Landing-Page### */
+
   /* Main_Intro */
   /* intro-common */
   .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh, .intro-background {
@@ -387,5 +389,46 @@
   /* Go-to-top */
   .goto-top {
     display: none;
+  }
+
+  /*#### Introduction-Pages #### */
+  /* Pages-common-styles */
+  .page-banner {
+    height: 240px;
+  }
+  .page-banner h1 {
+    font-size: 32px;
+  }
+  section .page-contents {
+    padding: 40px 0;
+  }
+
+  /* Worship-services page */
+  .worship-services-info {
+    height: 1450px;
+  }
+  .worship-services-info table tr td:last-child {
+    display: none;
+  }
+  .worship-services-info .worship-inner {
+    text-align: left;
+  }
+  .worship-services-info h1 {
+    font-size: 28px;
+  }
+  .worship-services-info table {
+    font-size: 16px;
+  }
+  .worship-services-info tr td {
+    padding: 0 3px;
+  }
+  .worship-services-info table tr td:nth-child(2) {
+    text-align: right;
+  }
+  .worship-lower {
+    flex-direction: column;
+  }
+  .worship-lower tr td span {
+    display: block;
   }
 }
