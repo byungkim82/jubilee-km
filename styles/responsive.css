@@ -431,4 +431,67 @@
   .worship-lower tr td span {
     display: block;
   }
+
+  /* Ministry-values page */
+  section .ministry-values.page-contents {
+    padding: 20px 0;
+  }
+  .ministry-values-heading {
+    padding: 30px 20px;
+  }
+  .ministry-values-heading h1, .ministry-values-heading h1 span {
+    font-size: 20px;
+  }
+  .ministry-values-heading h3 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .ministry-seven-values {
+    margin: 50px 0;
+  }
+  h1.sub-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .ministry-seven-values h1 em {
+    font-size: 24px;
+  }
+  .ministry-seven-values .value-contents {
+    margin-bottom: 10px;
+    border-radius: 50px 20px 20px 50px;
+    width: 100%;
+  }
+  .value-desc {
+    padding: 10px;
+    flex: 3.2;
+  }
+  .value-desc h4 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .ministry-twelve-rules {
+    margin-top: 50px;
+  }
+  .rules-kapc img {
+    float: none;
+  }
+  .rules-kapc, .rules-desc {
+    font-size: 16px;
+  }
+  .rules-desc {
+    text-align: left;
+  }
+  .rules-details .rules-detail-heading {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .rules-details .rules-detail-heading i {
+    font-size: 14px;
+    transform: translateY(-5%);
+  }
+  .rules-details .rules-detail-heading.active i {
+    transform: rotate(180deg);
+    font-size: 14px;
+    transform: translateY(-5%);
+  }
 }
