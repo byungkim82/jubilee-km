@@ -1486,6 +1486,7 @@ footer .copyright {
 /* #### Introduction Pages #### */
 
 /* Pages-common-styles */
+
 .page-banner {
   width: 100%;
   height: 300px;
@@ -1520,6 +1521,7 @@ section .page-contents {
 }
 
 /* Worship-services page */
+
 .worship-services.page-banner {
   background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
   background-size: cover; 
@@ -1801,14 +1803,12 @@ h1.sub-title {
 
 .rules-details .rules-detail-heading i {
   font-size: 16px;
-  padding-left: 10px;
 }
 
 /* 12신조 열기- active클래스 추가했을 때 */
 .rules-details .rules-detail-heading.active i {
   transform: rotate(180deg);
   font-size: 16px;
-  padding-left: 10px;
 }
 
 .rules-details ol.rules-detail-words {
@@ -1821,10 +1821,243 @@ h1.sub-title {
   display: none;
 }
 
+/* 12신조 열기- active클래스 추가했을 때 */
 .rules-details ol.rules-detail-words.active {
   display: block;
 }
 
 .rules-details ol.rules-detail-words li {
   padding-left: 5px;
+}
+
+/* New-members page */
+
+.new-members.page-banner {
+  background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.new-members-heading {
+  background-color: rgba(140, 31, 31, 0.10);
+  border-radius: 30px 0 30px 0;
+  text-align: center;
+  padding: 60px 5px;
+  margin-bottom: 70px;
+}
+
+.new-members-heading .fa-solid.fa-quote-left {
+  float: left;
+  color: #fff;
+  font-size: 120px;
+  text-shadow: 1px 1px 5px rgba(128, 128, 128, 0.591);
+  transform: translateY(-80%);
+  opacity: 50%;
+}
+
+.new-members-heading .fa-solid.fa-quote-right {
+  float: right;
+  color: #fff;
+  font-size: 120px;
+  text-shadow: 1px 1px 5px rgba(128, 128, 128, 0.591);
+  transform: translateY(-20%);
+  opacity: 50%;
+}
+
+.new-members-heading h2, .new-members-heading h1 {
+  font-family: var(--secondary-kr);
+  margin: 0;
+  transform: translateX(-20%);
+}
+
+.new-members-heading h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.new-members-heading h1 {
+  color: var(--red-wine);
+  font-weight: 600;
+}
+
+.new-members-heading h1 span {
+  font-size: 28px;
+  font-family: var(--secondary-kr);
+}
+
+img.jubilee-vector {
+  float: left;
+  transform: translate(-30%, 50%);
+}
+
+img.tree-vector {
+  float: right;
+  transform: translate(-170%,-20%);
+  width: 90px;
+}
+
+img.tree2-vector {
+  float: right;
+  transform: translate(40%,-55%);
+  width: 150px;
+}
+
+.registration-graphic {
+  display: flex;
+  flex: 1;
+  margin: 50px 0;
+}
+
+.registration-first-part,
+.registration-second-part {
+  display: flex;
+  align-items: center;
+}
+
+.registration-graphic .circle {
+  width: 180px;
+  height: 180px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-graphic p {
+  font-family: var(--tertiary-kr);
+  font-size: 24px;
+  margin: 0;
+  padding: 12px 0 3px 0;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+.registration-graphic i {
+  font-size: 53px;
+}
+
+.registration-graphic .fa-solid.fa-play {
+  margin: 0 20px;
+  font-size: 30px;
+  color: var(--light-gray);
+}
+
+.visit-church.circle {
+  border-color: var(--latte);
+}
+
+.visit-church.circle i {
+  color: var(--latte);
+}
+
+.member-registration.circle {
+  border-color: var(--deep-latte);
+}
+
+.member-registration.circle i {
+  color: var(--deep-latte);
+}
+
+.registered-member, .engaged-member {
+  text-align: center;
+}
+
+.registered-member p, .engaged-member p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.registered-member p, .registered-member i {
+  color: var(--light-black);
+}
+
+.engaged-member p, .engaged-member i {
+  color: var(--red-wine);
+}
+
+.new-membership.circle {
+  border-color: var(--olive);
+}
+
+.new-membership.circle i {
+  color: var(--olive);
+}
+
+.engaging-ceremony.circle {
+  border-color: var(--dark-olive);
+}
+
+.engaging-ceremony.circle i {
+  color: var(--dark-olive);
+}
+
+.how-to-register h2 {
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.how-to-register ul li {
+  font-size: 20px;
+  line-height: 1.5;
+  list-style: circle;
+}
+
+.how-to-register button, .new-membership-class button {
+  margin-top: 0;
+}
+
+.members-definition-container {
+  background-color: var(--creamy-white);
+}
+
+.members-definition h2, .new-membership-class h2 {
+  padding-top: 50px;
+  font-weight: 600;
+}
+
+.registered-definition, .engaged-definition {
+  display: flex;
+  align-items: flex-start;
+}
+
+.members-definition h4 {
+  color: var(--deep-latte);
+}
+
+.members-definition ul {
+  margin: 0;
+  flex: 1;
+}
+
+.members-definition li {
+  line-height: 1.5;
+}
+
+.engaged-definition {
+  margin-top: 15px;
+}
+
+.engaged-definition ul li span {
+  color: var(--red-wine);
+}
+
+.new-membership-class{
+  padding-bottom: 70px;
+}
+
+.new-membership-class h2 {
+  color: var(--red-wine);
+}
+
+.new-membership-class ul li {
+  font-size: 20px;
+  line-height: 1.5;
+  list-style: circle;
+}
+
+.new-members.page-contents {
+  padding-bottom: 0;
 }

@@ -451,7 +451,7 @@
   }
   h1.sub-title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 28px;
   }
   .ministry-seven-values h1 em {
     font-size: 24px;
@@ -491,7 +491,129 @@
   }
   .rules-details .rules-detail-heading.active i {
     transform: rotate(180deg);
-    font-size: 14px;
-    transform: translateY(-5%);
+    font-size: 16px;
   }
+  .rules-details ol.rules-detail-words {
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  /* New-members page */
+  section .new-members.page-contents {
+    padding: 20px 0;
+  }
+  .new-members-heading .fa-solid.fa-quote-left, .new-members-heading .fa-solid.fa-quote-right {
+    display: none;
+  }
+  .new-members-heading{
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
+  .new-members-heading h2, .new-members-heading h1 {
+    transform: translate(0%,-30%);
+  }
+  .new-members-heading h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .new-members-heading h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .new-members-heading h1 span{
+    font-size: 20px;
+  }
+  img.jubilee-vector {
+    width: 240px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0%,10%);
+  }
+  img.tree-vector {
+    position: absolute;
+    width: 40px;
+    right: 20%;
+    bottom: -5%;
+    transform: translate(0%);
+  }
+  img.tree2-vector {
+    position: absolute;
+    width: 60px;
+    right: 3%;
+    bottom: 0;
+    transform: translate(0%);
+  }
+  .registration-graphic {
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+  }
+  .registration-graphic .circle {
+    width: 95px;
+    height: 95px;
+    border: 2px solid #000;
+  }
+  .visit-church.circle {
+    border-color: var(--latte);
+  }
+  .member-registration.circle {
+    border-color: var(--deep-latte);
+  }
+  .registration-graphic p {
+    font-size: 14px;
+    padding: 8px 0 3px 0;
+  }
+  .registration-graphic i {
+    font-size: 27px;
+  }
+  .registration-graphic .fa-solid.fa-play {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+  .registration-second-part {
+    margin-top: 10px;
+  }
+  .registered-member p, .engaged-member p {
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+  .new-membership.circle {
+    border-color: var(--olive);
+  }
+  .engaging-ceremony.circle {
+    border-color: var(--dark-olive);
+  }
+  .how-to-register h2, .members-definition h2, .new-membership-class h2 {
+    font-size: 26px;
+  }
+  .how-to-register h2 { 
+    margin-top: 50px;
+  }
+  .members-definition h2, .new-membership-class h2 {
+    padding-top: 30px;
+  }
+  .how-to-register ul li {
+    text-align: left;
+  }
+  .how-to-register button, .new-membership-class button {
+    margin-bottom: 30px;
+  }
+  .registered-definition, .engaged-definition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .members-definition h4 {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .members-definition ul, .new-membership-class ul {
+    text-align-last: left;
+  }
+  .new-membership-class {
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+  
 }
