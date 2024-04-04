@@ -37,4 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   })
 
+  // Add rules-detail event listener
+  const rules_detail_heading = document.querySelector('.rules-detail-heading');
+  const rules_details_words = document.querySelector('.rules-detail-words');
+  rules_detail_heading.addEventListener("click", function () {
+    rules_detail_heading.classList.toggle('active');
+    rules_details_words.classList.toggle('active');
+  })
+
 });
