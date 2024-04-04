@@ -1520,6 +1520,12 @@ section .page-contents {
   padding: 70px 0;
 }
 
+h1.sub-title {
+  font-weight: 600;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
 /* Worship-services page */
 
 .worship-services.page-banner {
@@ -1673,12 +1679,6 @@ section .page-contents {
 
 .ministry-seven-values {
   margin: 80px 0;
-}
-
-h1.sub-title {
-  font-weight: 600;
-  margin-bottom: 40px;
-  line-height: 1.3;
 }
 
 .ministry-seven-values h1 span {
@@ -2060,4 +2060,147 @@ img.tree2-vector {
 
 .new-members.page-contents {
   padding-bottom: 0;
+}
+
+/* Staffs page */
+
+/* New-members page */
+
+.staffs.page-banner {
+  background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.staffs.page-contents {
+  padding-top: 0;
+}
+
+.upper-staffs {
+  background-color: var(--creamy-white);
+  position: relative;
+}
+
+.upper-staffs-inner {
+  position: relative;
+}
+
+.upper-staffs > img {
+  position: absolute;
+  right: 3%;
+  bottom: -12%;
+  width: 500px;
+}
+
+.upper-staffs h1.sub-title {
+  padding-top: 70px;
+}
+
+img.profile-img {
+  width: 200px;
+  height: 265px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.753);
+}
+
+.senior-pastor {
+  display: flex;
+  padding: 20px 0 50px 0;
+  align-items: flex-end;
+}
+
+.senior-pastor-profile {
+  margin-left: 20px;
+}
+
+.staff-name {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.staff-name span {
+  font-size: 16px;
+}
+
+.staffs .fa-regular.fa-envelope {
+  color: var(--red-wine);
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 5px;
+  transition: 0.25s;
+}
+
+.staffs .fa-regular.fa-envelope:hover {
+  transform: scale(120%);
+  font-weight: 600;
+}
+
+.upper-staffs p, .lower-staffs p {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.senior-pastor-profile p:nth-of-type(1),.pastors-profile .profile-card p:nth-of-type(1), .junior-pastors .profile-card p:nth-of-type(1), .junior-pastors-em .profile-card p:nth-of-type(1)  {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.senior-pastor-profile p:nth-of-type(2), .pastors-profile .profile-card p:nth-of-type(2), .junior-pastors .profile-card p:nth-of-type(2), .junior-pastors-em .profile-card p:nth-of-type(2) {
+  font-weight: 500;
+  color: var(--deep-latte);
+}
+
+.senior-pastor-profile ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.senior-pastor-profile ul li {
+  font-size: 14px;
+}
+
+.lower-staffs {
+  position: relative;
+}
+
+.lower-staffs img.jubilee-background {
+  position: absolute;
+  opacity: 3%;
+  width: 1530px;
+  z-index: -1;
+}
+
+.lower-staffs img.jubilee-background:nth-of-type(1) {
+  top: 10%;
+  left: 0;
+}
+
+.lower-staffs img.jubilee-background:nth-of-type(2) {
+  bottom: 10%;
+  right: 0;
+}
+
+.lower-staffs-inner {
+  padding-top: 50px;
+}
+
+.lower-staffs-inner img.profile-img{
+  display: block;
+}
+
+.pastors-profile, .junior-pastors, .junior-pastors-em {
+  display: flex;
+}
+
+.lower-staffs-inner .profile-card {
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.lower-staffs-inner .profile-card {
+  text-align: center;
+}
+
+.lower-staffs-inner .profile-card .staff-name {
+  padding-top: 10px;
 }
