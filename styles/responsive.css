@@ -686,4 +686,32 @@
     font-family: var(--primary-en);
     line-height: 1;
   }
+
+  /* Direction page */
+  .directon-inner h1.sub-title {
+    padding-top: 40px;
+  }
+  .jubilee-address-copy, .jubilee-contact-number {
+    text-align: left;
+  }
+  .direction-inner i {
+    font-size: 16px;
+  }
+  .direction-inner h4 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .jubilee-address-copy h4 {
+    margin: 30px 0 15px 0;
+  }
+  .jubilee-address-copy .fa-solid.fa-location-dot {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  .jubilee-contact-number .fa-solid.fa-phone {
+    padding-right: 5px;
+  }
+  .jubilee-google-map {
+    margin-bottom: 10px;
+  }
 }

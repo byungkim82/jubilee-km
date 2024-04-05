@@ -1538,7 +1538,7 @@ h1.sub-title {
   background-size: cover;
   position: relative;
   width: 100%; 
-  height: 1130px;
+  height: 1170px;
 }
 
 .worship-services-info:before {
@@ -2064,8 +2064,6 @@ img.tree2-vector {
 
 /* Staffs page */
 
-/* New-members page */
-
 .staffs.page-banner {
   background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
   background-size: cover; 
@@ -2197,10 +2195,52 @@ img.profile-img {
   margin-bottom: 50px;
 }
 
+.junior-pastors-em .profile-card {
+  margin-bottom: 0;
+}
+
 .lower-staffs-inner .profile-card {
   text-align: center;
 }
 
 .lower-staffs-inner .profile-card .staff-name {
   padding-top: 10px;
+}
+
+/* Direction page */
+
+.direction.page-banner {
+  background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.direction-inner i {
+  font-size: 22px;
+}
+
+.direction-inner h4 {
+  padding: 0 10px;
+  font-family: var(--secondary-en);
+  font-weight: 600;
+}
+
+.jubilee-address-copy .fa-solid.fa-location-dot {
+  color: var(--red-wine);
+  font-size: 26px;
+  padding-right: 10px;
+}
+
+.jubilee-address-copy .fa-regular.fa-copy {
+  color: var(--med-gray);
+  padding-left: 5px;
+}
+
+.jubilee-contact-number .fa-solid.fa-phone {
+  color: var(--deep-latte);
+  padding-right: 10px;
+}
+
+.jubilee-google-map {
+  width: 100%;
+  margin: 20px 0 30px 0;
 }
