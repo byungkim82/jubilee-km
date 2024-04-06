@@ -153,6 +153,8 @@
    display: block;
   }
   
+  /* ###Landing-Page### */
+
   /* Main_Intro */
   /* intro-common */
   .intro, .intro-second, .intro-third, .intro-fourth, .intro-fifth, .intro-sixth, .intro-seventh, .intro-background {
@@ -387,5 +389,329 @@
   /* Go-to-top */
   .goto-top {
     display: none;
+  }
+
+  /*#### Introduction-Pages #### */
+  /* Pages-common-styles */
+  .page-banner {
+    height: 240px;
+  }
+  .page-banner h1 {
+    font-size: 32px;
+  }
+  section .page-contents {
+    padding: 40px 0;
+  }
+
+  /* Worship-services page */
+  .worship-services-info {
+    height: 1450px;
+  }
+  .worship-services-info table tr td:last-child {
+    display: none;
+  }
+  .worship-services-info .worship-inner {
+    text-align: left;
+  }
+  .worship-services-info h1 {
+    font-size: 28px;
+  }
+  .worship-services-info table {
+    font-size: 16px;
+  }
+  .worship-services-info tr td {
+    padding: 0 3px;
+  }
+  .worship-services-info table tr td:nth-child(2) {
+    text-align: right;
+  }
+  .worship-lower {
+    flex-direction: column;
+  }
+  .worship-lower tr td span {
+    display: block;
+  }
+
+  /* Ministry-values page */
+  section .ministry-values.page-contents {
+    padding: 20px 0;
+  }
+  .ministry-values-heading {
+    padding: 30px 20px;
+  }
+  .ministry-values-heading h1, .ministry-values-heading h1 span {
+    font-size: 20px;
+  }
+  .ministry-values-heading h3 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .ministry-seven-values {
+    margin: 50px 0;
+  }
+  h1.sub-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .ministry-seven-values h1 em {
+    font-size: 24px;
+  }
+  .ministry-seven-values .value-contents {
+    margin-bottom: 10px;
+    border-radius: 50px 20px 20px 50px;
+    width: 100%;
+  }
+  .value-desc {
+    padding: 10px;
+    flex: 3.2;
+  }
+  .value-desc h4 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .ministry-twelve-rules {
+    margin-top: 50px;
+  }
+  .rules-kapc img {
+    float: none;
+  }
+  .rules-kapc, .rules-desc {
+    font-size: 16px;
+  }
+  .rules-desc {
+    text-align: left;
+  }
+  .rules-details .rules-detail-heading {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .rules-details .rules-detail-heading i {
+    font-size: 14px;
+    transform: translateY(-5%);
+  }
+  .rules-details .rules-detail-heading.active i {
+    transform: rotate(180deg);
+    font-size: 16px;
+  }
+  .rules-details ol.rules-detail-words {
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  /* New-members page */
+  section .new-members.page-contents {
+    padding: 20px 0;
+  }
+  .new-members-heading .fa-solid.fa-quote-left, .new-members-heading .fa-solid.fa-quote-right {
+    display: none;
+  }
+  .new-members-heading{
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
+  .new-members-heading h2, .new-members-heading h1 {
+    transform: translate(0%,-30%);
+  }
+  .new-members-heading h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .new-members-heading h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .new-members-heading h1 span{
+    font-size: 20px;
+  }
+  img.jubilee-vector {
+    width: 240px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0%,10%);
+  }
+  img.tree-vector {
+    position: absolute;
+    width: 40px;
+    right: 20%;
+    bottom: -5%;
+    transform: translate(0%);
+  }
+  img.tree2-vector {
+    position: absolute;
+    width: 60px;
+    right: 3%;
+    bottom: 0;
+    transform: translate(0%);
+  }
+  .registration-graphic {
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+  }
+  .registration-graphic .circle {
+    width: 95px;
+    height: 95px;
+    border: 2px solid #000;
+  }
+  .visit-church.circle {
+    border-color: var(--latte);
+  }
+  .member-registration.circle {
+    border-color: var(--deep-latte);
+  }
+  .registration-graphic p {
+    font-size: 14px;
+    padding: 8px 0 3px 0;
+  }
+  .registration-graphic i {
+    font-size: 27px;
+  }
+  .registration-graphic .fa-solid.fa-play {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+  .registration-second-part {
+    margin-top: 10px;
+  }
+  .registered-member p, .engaged-member p {
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+  .new-membership.circle {
+    border-color: var(--olive);
+  }
+  .engaging-ceremony.circle {
+    border-color: var(--dark-olive);
+  }
+  .how-to-register h2, .members-definition h2, .new-membership-class h2 {
+    font-size: 26px;
+  }
+  .how-to-register h2 { 
+    margin-top: 50px;
+  }
+  .members-definition h2, .new-membership-class h2 {
+    padding-top: 30px;
+  }
+  .how-to-register ul li {
+    text-align: left;
+  }
+  .how-to-register button, .new-membership-class button {
+    margin-bottom: 30px;
+  }
+  .registered-definition, .engaged-definition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .members-definition h4 {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .members-definition ul, .new-membership-class ul {
+    text-align-last: left;
+  }
+  .new-membership-class {
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  /* Staffs page */
+  .upper-staffs h1.sub-title {
+    padding-top: 40px;
+  }
+  .upper-staffs > img {
+    width: 280px;
+    right: 0;
+    bottom: -10%;
+  }
+  img.profile-img {
+    width: 120px;
+    height: 160px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.502);
+  }
+  .upper-staffs p, .lower-staffs p {
+    line-height: 1;
+  }
+  .senior-pastor {
+    padding: 30px 0;
+    align-items: center;
+  }
+  .senior-pastor-profile {
+    margin-left: 10px;
+  }
+  .staff-name {
+    font-size: 16px;
+  }
+  .staff-name span {
+    font-size: 14px;
+  }
+  .staffs .fa-regular.fa-envelope {
+    font-size: 16px;
+  }
+  .senior-pastor-profile {
+    text-align: left;
+  }
+  .senior-pastor-profile p:nth-of-type(1),.pastors-profile .profile-card p:nth-of-type(1), .junior-pastors .profile-card p:nth-of-type(1), .junior-pastors-em .profile-card p:nth-of-type(1) {
+    font-size: 12px;
+    padding-bottom: 7px;
+  }
+  .senior-pastor-profile p:nth-of-type(2), .pastors-profile .profile-card p:nth-of-type(2), .junior-pastors .profile-card p:nth-of-type(2), .junior-pastors-em .profile-card p:nth-of-type(2) { 
+    font-size: 10px;
+  }
+  .senior-pastor-profile ul {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .senior-pastor-profile ul li {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .lower-staffs img.jubilee-background {
+    display: none;
+  }
+  .lower-staffs-inner {
+    padding-top: 40px;
+  }
+  .lower-staffs-inner .profile-card {
+    margin: 0 10px;
+    margin-bottom: 30px;
+  }
+  .pastors-profile, .junior-pastors, .junior-pastors-em {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .junior-pastors-em .profile-card .eng-name {
+    font-family: var(--primary-en);
+    line-height: 1;
+  }
+
+  /* Direction page */
+  .directon-inner h1.sub-title {
+    padding-top: 40px;
+  }
+  .jubilee-address-copy, .jubilee-contact-number {
+    text-align: left;
+  }
+  .direction-inner i {
+    font-size: 16px;
+  }
+  .direction-inner h4 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .jubilee-address-copy h4 {
+    margin: 30px 0 15px 0;
+  }
+  .jubilee-address-copy .fa-solid.fa-location-dot {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  .jubilee-contact-number .fa-solid.fa-phone {
+    padding-right: 5px;
+  }
+  .jubilee-google-map {
+    margin-bottom: 10px;
   }
 }

@@ -37,4 +37,29 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   })
 
+  // Add rules-detail event listener
+  const rules_detail_heading = document.querySelector('.rules-detail-heading');
+  if (rules_detail_heading) {
+    const rules_details_words = document.querySelector('.rules-detail-words');
+    rules_detail_heading.addEventListener("click", function () {
+      rules_detail_heading.classList.toggle('active');
+      if (rules_details_words) {
+        rules_details_words.classList.toggle('active');
+      }
+  })
+  }
+
+  // Add copy address event listener
+  const copy_address_anchor = document.getElementById('copy-address')
+  if (copy_address_anchor) {
+    copy_address_anchor.addEventListener('click', function(event) {
+      event.preventDefault();
+      console.log(event);
+      
+      const textToCopy = document.getElementById('address-text').innerText;
+  
+      navigator.clipboard.writeText(textToCopy)
+    });
+  }
+  
 });
