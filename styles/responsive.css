@@ -12,6 +12,11 @@
     text-align: center;
   }
 
+  /* button(page-nav) */
+  .btn-page-nav span {
+    display: none;
+  }
+
   /* header */
   .top-banner {
     width: 100%;
@@ -238,7 +243,7 @@
     font-size: 24px;
   }
 
-  /* section_common */
+  /* Section_common */
   section {
     text-align: center; 
   }
@@ -265,7 +270,7 @@
   .sermon-contents i {
     display: block;
   }
-  .sermon-contents a.sermon-card{
+  .sermon-summary .sermon-contents a.sermon-card{
     display: none;
     opacity: 0;
     width: 280px;
@@ -713,5 +718,66 @@
   }
   .jubilee-google-map {
     margin-bottom: 10px;
+  }
+
+  /* Sermons page */
+  .sunday-sermons-cards .sermon-contents {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .sunday-sermons-cards .sermon-contents a.sermon-card{
+    display: block;
+  }
+  .sunday-sermons .btn-viewmore {
+    margin-top: 40px;
+  }
+  .sunday-sermons .search-field {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .sunday-sermons .search-field input {
+    width: 75%;
+  }
+
+  /* Sunday-sermons-detail page */
+  .sunday-sermons-detail-inner h1.sub-title {
+    margin: 0 0 20px 0;
+  }
+  .sunday-sermons-detail-inner h3 span {
+    padding: 0 8px;
+  }
+  .todays-scripture-heading, .todays-questions-heading {
+    font-size: 20px;
+  }
+  .todays-scripture {
+    margin-top: 40px;
+  }
+  .todays-questions {
+    margin-top: 20px;
+  }
+  .todays-scripture-heading i, .todays-questions-heading i {
+    padding: 5px;
+  }
+  .sunday-sermons-detail-inner .fa-solid.fa-chevron-down {
+    font-size: 16px;
+  }
+  .todays-scripture-contents {
+    padding: 20px 5px 5px 0;
+  }
+  .todays-scripture-contents h4 {
+    padding: 0 10px
+  }
+  .todays-questions-contents {
+    padding: 10px;
+  }
+  .todays-questions-contents img {
+    width: 100%;
+  }
+  .sunday-sermons-detail hr:nth-of-type(2) {
+    margin: 30px auto;
+  }
+  .sermon-page-nav-buttons {
+    display: flex;
+    justify-content: space-between;
   }
 }

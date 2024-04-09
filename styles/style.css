@@ -28,7 +28,7 @@ body {
   margin: auto;
 }
 
-/* Button CSS */
+/* Button(viewmore) CSS */
 .btn-viewmore {
   width: 180px;
   padding: 10px;
@@ -56,6 +56,88 @@ body {
 
 .btn-viewmore:hover i {
   color: white;
+}
+
+/* Button(page-nav) CSS */
+.btn-page-nav {
+  font-size: 20px;
+  padding: 10px 15px;
+  color: var(--deep-latte);
+  border: none;
+  font-weight: 500;
+  background-color: var(--whitey-gray);
+  margin: 0 5px;
+  transition: 0.35s;
+  border-radius: 5px;
+}
+
+.btn-page-nav:hover {
+  background-color: var(--deep-latte);
+  color: #fff;
+}
+
+.btn-page-nav i {
+  padding: 0 7px;
+  font-size: 14px;
+  transform: translateY(-10%);
+}
+
+/* Search field CSS */
+.search-field {
+  display: inline-block;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.397);
+  width: 370px;
+  height: 55px;
+  background-color: #fff;
+}
+
+.search-field input {
+  border: none;
+  font-size: 16px;
+  color: var(--black);
+  padding: 12px 20px;
+  float: left;
+  height: 100%;
+  width: 77%;
+}
+
+.search-field:focus-within {
+  outline: 1px solid var(--deep-latte);
+  box-shadow: 0 0 10px rgba(165, 123, 5, 0.447);
+}
+
+.search-field input::placeholder {
+  color: var(--silver);
+}
+
+.search-field input:focus::placeholder{
+  opacity: 0;
+}
+
+.search-field button {
+  width: 80px;
+  height: 100%;
+  border: none;
+  background-color: var(--latte);
+  float: right;
+  transition: 0.35s;
+}
+
+.search-field button i {
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.35s;
+}
+
+.search-field button:hover {
+  background-color: var(--deep-latte);
+}
+
+.search-field button:hover > i {
+  color: var(--foam-latte);
 }
 
 /* The animation code */
@@ -2244,3 +2326,212 @@ img.profile-img {
   width: 100%;
   margin: 20px 0 30px 0;
 }
+
+/* Sermons page */
+
+.sunday-sermons.page-banner {
+  background: url(/resources/images/sermon/sermon-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.sunday-sermons.page-contents {
+  text-align: center;
+}
+
+.sunday-sermons-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sunday-sermons-cards .sermon-contents {
+  width: 392px;
+  margin-top: 50px;
+}
+
+.sunday-sermons-cards .sermon-contents a.sermon-card {
+  width: 100%;
+  height: 100%;
+}
+
+.sunday-sermons-cards .sermon-contents .sermon-card img {
+  width: 100%;
+}
+
+.sunday-sermons-cards .sermon-contents .sermon-card .card-desc {
+  height: 150px;
+  padding: 20px 15px;
+}
+
+.sunday-sermons-cards .sermon-contents .sermon-card .card-desc .card-badge span {
+  font-size: 16px;
+  padding: 2px 8px;
+}
+
+.sunday-sermons-cards .sermon-contents .sermon-card .card-desc .card-badge em {
+  font-size: 18px;
+}
+
+.sunday-sermons-cards .sermon-contents .sermon-card .card-desc h4 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sunday-sermons-cards .sermon-contents .sermon-card .card-desc b {
+  font-size: 20px;
+}
+.sunday-sermons .btn-viewmore {
+  margin-top: 80px;
+}
+
+/* Sunday-sermons-detail page */
+
+.sunday-sermons-detail.page-banner {
+  background: url(/resources/images/sermon/sermon-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.sunday-sermons-detail {
+  text-align: center;
+}
+
+.sunday-sermon-youtube {
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.sunday-sermon-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sunday-sermons-detail-inner h1.sub-title {
+  margin: 50px 0 25px 0;
+}
+
+.sunday-sermons-detail-inner h3 {
+  color: var(--red-wine);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.sunday-sermons-detail-inner h3 span {
+  padding: 0 12px;
+}
+
+.sunday-sermons-detail-inner p {
+  color: var(--deep-latte);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.sunday-sermons-detail hr {
+  width: 50px;
+  height: 1px;
+  border: none;
+  background-color: var(--latte);
+  margin: 30px auto;
+}
+
+.todays-scripture-heading, .todays-questions-heading {
+  width: 100%;
+  font-size: 28px;
+  border: 1px solid var(--latte);
+  padding: 10px;
+  font-family: var(--tertiary-kr);
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.404);
+  transition: 0.25s;
+  background-color: #fff;
+  margin: 0;
+}
+
+.todays-scripture-heading:hover {
+  cursor: pointer;
+  color: var(--deep-latte);
+  background-color: var(--creamy-white);
+}
+
+.todays-questions-heading:hover {
+  cursor: pointer;
+  color: var(--red-wine);
+  background-color: var(--creamy-white);
+}
+
+.todays-scripture {
+  margin-top: 60px;
+}
+
+.todays-questions {
+  margin-top: 30px;
+}
+
+.todays-scripture-heading i, .todays-questions-heading i {
+  padding: 10px;
+}
+
+.todays-scripture-heading .fa-solid.fa-book-open {
+  color: var(--deep-latte);
+}
+
+.sunday-sermons-detail-inner .fa-solid.fa-chevron-down {
+  font-size: 20px;
+  color: var(--med-gray);
+}
+.todays-questions-heading .fa-solid.fa-heart {
+  color: var(--red-wine);
+}
+
+.todays-scripture-contents {
+  text-align: left;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.404);
+  padding: 25px 15px 5px 15px;
+  opacity: 0;
+  display: none;
+  transition: 0.35s;
+}
+
+.todays-scripture-contents h4 {
+  margin: 0;
+  padding: 0 15px;
+  color: var(--deep-latte);
+}
+
+.todays-scripture-contents ol li {
+  padding: 5px;  
+}
+
+.todays-questions-contents {
+  padding: 15px;
+  opacity: 0;
+  display: none;
+  transition: 0.35s;
+}
+
+.sunday-sermons-detail hr:nth-of-type(2) {
+  margin: 50px auto;
+}
+
+/* 본문열기, 사랑방 질문 열기 - active클래스 추가 동작 모음 */
+.todays-scripture-heading.active .fa-solid.fa-chevron-down.scripture-chevron {
+  transform: rotate(180deg);
+}
+
+.todays-questions-heading.active .fa-solid.fa-chevron-down.questions-chevron {
+  transform: rotate(180deg);
+}
+
+.todays-scripture-contents.active, .todays-questions-contents.active {
+  opacity: 100%;
+  display: block;
+}
+
