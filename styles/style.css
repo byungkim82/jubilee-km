@@ -69,11 +69,16 @@ body {
   margin: 0 5px;
   transition: 0.35s;
   border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.436);
 }
 
 .btn-page-nav:hover {
   background-color: var(--deep-latte);
   color: #fff;
+}
+
+.btn-page-nav:active {
+  transform: scale(95%);
 }
 
 .btn-page-nav i {
