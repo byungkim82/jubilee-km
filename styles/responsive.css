@@ -714,4 +714,28 @@
   .jubilee-google-map {
     margin-bottom: 10px;
   }
+
+  /* Young-adults page */
+  .young-adults h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .young-adults-contents {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .young-adults-card {
+    margin-bottom: 50px;
+  }
+  .young-adults-card:last-child {
+    margin-bottom: 0;
+  }
+  .young-adults-card h1 {
+    padding-left: 120px;
+    font-size: 28px;
+  }
+  .young-adults-contents-inner ul {
+    text-align-last: left;
+  }
 }
