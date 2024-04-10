@@ -547,7 +547,6 @@
   }
   .registration-graphic {
     flex-direction: column;
-    margin: 30px 0;
     align-items: center;
   }
   .registration-graphic .circle {
@@ -738,4 +737,97 @@
   .young-adults-contents-inner ul {
     text-align-last: left;
   }
+
+  /* Misamo page */
+  .misamo h1.sub-title {
+    padding-bottom: 15px;
+  }
+  .misamo-heading-background i:first-child {
+    font-size: 180px;
+    top: -120px;
+    left: -10%;
+  }
+  .misamo-heading-background i:nth-child(2) {
+    font-size: 80px;
+    top: -90px;
+    right: 0;
+    animation: none;
+  }
+  .misamo-heading-background i:last-child {
+    font-size: 150px;
+    top: 150px;
+  }
+  .misamo-heading {
+    width: 100%;
+  }
+  .misamo-heading h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .misamo-heading h2 b {
+    font-size: 18px;
+    display: block;
+  }
+  .misamo-heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .misamo-contents {
+    margin-bottom: 20px;
+  }
+  .misamo-contents-container {
+    padding: 30px 0 20px 0;
+  }
+  .misamo-card {
+    width: 100%;
+    height: 140px;
+    gap: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .misamo-card .misamo-card-desc {
+    padding: 10px;
+  }
+  .misamo-card-desc h4 {
+    font-size: 14px;
+  }
+  .misamo-card-desc h4 em {
+    font-size: 12px;
+  }
+  .misamo-card-desc ul {
+    padding-left: 15px;
+    font-size: 10px;
+    line-height: 1.3;
+    margin-top: 5px;
+  }
+  .misamo-card-desc p {
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  .misamo-contents-inner h3 {
+    font-size: 16px;
+  }
+  .misamo-contents-inner h3 i {
+    display: block;
+    line-height: 1.7;
+    font-size: 24px;
+  }
+  .misamo-participate {
+    padding-top: 30px;
+  }
+  .misamo-participate-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .misamo-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .misamo-participate-boxes button {
+    margin-bottom: 30px;
+  }
 }
+
