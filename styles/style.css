@@ -58,7 +58,146 @@ body {
   color: white;
 }
 
-/* The animation code */
+/* Search field CSS */
+.search-field {
+  display: inline-block;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.397);
+  width: 370px;
+  height: 55px;
+  background-color: #fff;
+}
+
+.search-field input {
+  border: none;
+  font-size: 16px;
+  color: var(--black);
+  padding: 12px 20px;
+  float: left;
+  height: 100%;
+  width: 77%;
+}
+
+.search-field:focus-within {
+  outline: 1px solid var(--deep-latte);
+  box-shadow: 0 0 10px rgba(165, 123, 5, 0.447);
+}
+
+.search-field input::placeholder {
+  color: var(--silver);
+}
+
+.search-field input:focus::placeholder{
+  opacity: 0;
+}
+
+.search-field button {
+  width: 80px;
+  height: 100%;
+  border: none;
+  background-color: var(--latte);
+  float: right;
+  transition: 0.35s;
+}
+
+.search-field button i {
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.35s;
+}
+
+.search-field button:hover {
+  background-color: var(--deep-latte);
+}
+
+.search-field button:hover > i {
+  color: var(--foam-latte);
+}
+
+/* Table-board CSS */
+.table-board {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.table-board tr {
+  height: 70px;
+  border-bottom: 1px solid var(--latte);
+  transition: 0.35s;
+}
+
+.table-board tr:hover {
+  background-color: var(--creamy-white);
+  color: var(--red-wine);
+}
+
+.table-board tr:first-child {
+  border-top: 2px solid var(--latte);
+}
+
+.table-board tr:last-child {
+  border-bottom: 2px solid var(--latte);
+}
+
+.table-board tr td {
+  padding: 15px;
+}
+
+.table-board tr td:first-child {
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.table-board tr td:last-child {
+  text-align: right;
+  color: var(--deep-latte);
+  width: 120px;
+}
+
+/* Pagenation CSS */
+.pagenation {
+  display: flex;
+  justify-content: center;
+  margin: 70px auto 20px auto;
+}
+
+.pagebox {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid var(--deep-latte);
+  margin-right: 5px;
+  background-color: #fff;
+  color: var(--deep-latte);
+  transition: 0.25s;
+}
+
+.pagebox:hover {
+  background-color: var(--foam-latte);
+}
+
+.pagebox:disabled {
+  border: 1px solid var(--light-gray);
+  color: var(--whitey-gray);
+}
+
+.pagebox:nth-child(3) {
+  background-color: var(--deep-latte);
+  color: #fff;
+}
+
+.pagebox:last-child {
+  margin-right: 0;
+}
+
+/* The Animation code */
 @keyframes floating-effect {
   0% {margin-top: 100px;
   opacity:0;}
@@ -2244,3 +2383,37 @@ img.profile-img {
   width: 100%;
   margin: 20px 0 30px 0;
 }
+
+/* Church-news page */
+
+.church-news.page-banner {
+  background: url(/resources/images/news/news-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.church-news {
+  text-align: center;
+}
+
+/* Church-members-news page */
+
+.church-members-news.page-banner {
+  background: url(/resources/images/news/news-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.church-members-news {
+  text-align: center;
+}
+
+/* Church-bulletins page */
+
+.church-bulletins.page-banner {
+  background: url(/resources/images/news/news-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.church-bulletins {
+  text-align: center;
+}
+

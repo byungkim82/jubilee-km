@@ -12,6 +12,25 @@
     text-align: center;
   }
 
+  /* button-page-nav */
+  .search-field {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .search-field input {
+    width: 75%;
+  }
+
+  /* table-board */
+  .table-board {
+    margin-top: 10px;
+  }
+
+  /* pagenation */
+  .pagenation {
+    margin-top: 50px;
+  }
+
   /* header */
   .top-banner {
     width: 100%;
