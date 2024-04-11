@@ -829,5 +829,27 @@
   .misamo-participate-boxes button {
     margin-bottom: 30px;
   }
+
+  /* Adults-care page */
+  .adults-care-heading-inner h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .adults-care-contents {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .adults-care-card {
+    margin-bottom: 25px;
+    width: 80%;
+    height: 200px;
+  }
+  .adults-care-card:last-child {
+    margin-bottom: 0;
+  }
+  .young-adults-contents-inner ul {
+    text-align-last: left;
+  }
 }
 

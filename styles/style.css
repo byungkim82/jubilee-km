@@ -2353,13 +2353,10 @@ img.profile-img {
   font-family: var(--tertiary-kr);
 }
 
-.young-adults-card:first-child {
-  border: 1px solid var(--navy-blue);
-}
-
 .young-adults-card:first-child .icon-bg {
   background: linear-gradient(135deg, rgba(32, 68, 140, 0.5),rgba(32, 68, 140, 1));
   text-align: center;
+  animation: floating-effect 1.5s;
 }
 
 .young-adults-card:first-child .icon-bg i {
@@ -2376,12 +2373,10 @@ img.profile-img {
   font-family: var(--tertiary-kr);
 }
 
-.young-adults-card:nth-child(2) {
-  border: 1px solid var(--dark-olive);
-}
 .young-adults-card:nth-child(2) .icon-bg {
   background: linear-gradient(317deg, #535925 0%, rgba(83, 89, 37, 0.50) 96.2%);
   text-align: center;
+  animation: floating-effect 2s;
 }
 
 .young-adults-card:nth-child(2) .icon-bg i {
@@ -2405,12 +2400,10 @@ img.profile-img {
   color: var(--dark-olive);
 }
 
-.young-adults-card:nth-child(3) {
-  border: 1px solid var(--mandarin);
-}
 .young-adults-card:nth-child(3) .icon-bg {
   background: linear-gradient(319deg, #FF6D03 0%, rgba(255, 109, 3, 0.50) 94.46%);
   text-align: center;
+  animation: floating-effect 2.5s;
 }
 
 .young-adults-card:nth-child(3) .icon-bg i {
@@ -2705,4 +2698,114 @@ img.profile-img {
 
 .misamo-participate-boxes button {
   margin-top: 18px;
+}
+
+/* Adults-care page */
+
+.adults-care.page-banner {
+  background: url(/resources/images/groupcare/groupcare-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.adults-care h1.sub-title {
+  margin-bottom: 20px;
+}
+
+.adults-care h3 {
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.adults-care h3 span {
+  color: var(--deep-latte);
+}
+
+.adults-care-contents {
+  background-color: var(--creamy-white);
+  padding: 60px 0;
+}
+
+.adults-care-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: floating-effect 2s;
+  padding-bottom: 20px;
+}
+
+.adults-care-card {
+  width: 236px;
+  height: 220px;
+  border-radius: 40px 20px 20px 20px;
+  background-color: #fff;
+  padding: 0px auto;
+  position: relative;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.35s;
+  text-align: center;
+ 
+}
+
+.adults-care-card:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+}
+
+.adults-care-card h3, .adults-care-card h4, .adults-care-card p {
+  font-family: var(--tertiary-kr);
+}
+
+.adults-care-card h3 {
+  width: 200px;
+  height: 60px;
+  background-color: pink;
+  position: absolute;
+  line-height: 60px;
+  top: 30px;
+  left: -10px;
+  border-radius: 10px 5px 5px 5px;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.425);
+  animation: floating-effect 1.7s;
+}
+
+.adults-care-card h4 {
+  padding-top: 120px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.adults-care-card:nth-child(1) h3 {
+  background-color: var(--navy-blue);
+}
+
+.adults-care-card:nth-child(2) h3 {
+  background-color: var(--vivid-blue);
+}
+
+.adults-care-card:nth-child(3) h3 {
+  background-color: var(--dark-olive);
+}
+
+.adults-care-card:nth-child(4) h3 {
+  background-color: var(--olive);
+}
+
+.adults-care-card:nth-child(5) h3 {
+  background-color: var(--deep-latte);
+}
+
+.adults-care-meetings {
+  margin-top: 50px;
+}
+
+.adults-care-meetings h4 {
+  font-weight: normal;
+}
+
+.adults-care-meetings button {
+  margin-top: 0;
+}
+.adults-care.page-contents {
+  padding-bottom: 0;
 }
