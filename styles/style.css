@@ -2759,7 +2759,6 @@ img.profile-img {
 .adults-care-card h3 {
   width: 200px;
   height: 60px;
-  background-color: pink;
   position: absolute;
   line-height: 60px;
   top: 30px;
@@ -3083,3 +3082,401 @@ img.profile-img {
   margin-bottom: 20px;
 }
 
+/* Igm page */
+
+.igm.page-banner {
+  background: url(/resources/images/igm/igm-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.igm-heading-background {
+  position: relative;
+}
+
+.igm-heading-background i {
+  position: absolute;
+  color: var(--mandarin);
+  z-index: -1;
+}
+
+@keyframes slide-from-up {
+  from {
+    top: -270px;
+    opacity: 0%;
+  }
+  to {
+    top: -150px;
+    opacity: 20%;
+  }
+}
+
+@keyframes slide-from-upup {
+  from {
+    top: -150px;
+    opacity: 0%;
+  }
+  to {
+    top: 3px;
+    opacity: 18%;
+  }
+}
+
+@keyframes slide-from-rightright {
+  from {
+    right: -100px;
+    opacity: 0%;
+  }
+  to {
+    right: 180px;
+    opacity: 10%;
+  }
+}
+
+.igm-heading-background i:first-child {
+  font-size: 300px;
+  top: -150px;
+  left: 5%;
+  opacity: 20%;
+  animation: slide-from-up 2s;
+}
+
+.igm-heading-background i:nth-child(2) {
+  font-size: 90px;
+  color: var(--olive);
+  opacity: 18%;
+  top: 3px;
+  right: 10%;
+  animation: slide-from-upup 2.5s;
+}
+
+.igm-heading-background i:nth-child(3) {
+  font-size: 130px;
+  color: var(--vivid-blue);
+  top: 60px;
+  right: 180px;
+  opacity: 10%;
+  animation: slide-from-rightright 2s;
+}
+
+.igm-heading-background i:nth-child(4) {
+  font-size: 50px;
+  color: var(--mustard);
+  top: 120px;
+  left: 27%;
+  opacity: 13%;
+}
+
+.igm-heading-background i:nth-child(5) {
+  font-size: 100px;
+  color: var(--mustard);
+  opacity: 10%;
+  top: 20px;
+  left: 30%;
+}
+
+.igm-heading-background i:nth-child(6) {
+  font-size: 80px;
+  color: var(--mustard);
+  top: -150px;
+  right: 320px;
+  opacity: 10%;
+}
+
+.igm-heading-background i:nth-child(7) {
+  font-size: 220px;
+  color: var(--mustard);
+  top: -230px;
+  right: 20px;
+  opacity: 8%;
+}
+
+.igm-heading {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+  color: var(--latte);
+  margin: 50px auto 100px auto;
+}
+
+.igm-heading h2 {
+  font-family: var(--secondary-kr);
+  font-weight: 600;
+}
+
+.igm-heading h2 span {
+  display: block;
+  font-family: var(--secondary-kr);
+  font-weight: 600;
+}
+
+.igm-upper-contents {
+  background-color: rgba(253, 184, 55, 0.07);
+}
+
+h1.with-border {
+  border: 3px solid var(--mustard);
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 5px 15px;
+  transform: translateY(-30%);
+  margin-bottom: 20px;
+}
+
+.igm-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: floating-effect 2s;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.igm-card {
+  width: 236px;
+  min-width: 150px;
+  height: 225px;
+  border-radius: 40px 20px 20px 20px;
+  background-color: #fff;
+  padding: 0px auto;
+  position: relative;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.35s;
+  text-align: center;
+}
+
+.igm-card:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+}
+
+.igm-card h3, .igm-card h4, .igm-card p {
+  font-family: var(--tertiary-kr);
+}
+
+.igm-card h3 {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  line-height: 60px;
+  top: 30px;
+  left: -10px;
+  border-radius: 10px 5px 5px 5px;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.235);
+  animation: floating-effect 1.7s;
+}
+
+.igm-card h4 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.igm-card:nth-child(1) h3 {
+  background-color: var(--mustard);
+}
+
+.igm-card:nth-child(2) h3 {
+  background-color: var(--mandarin);
+}
+
+.igm-card:nth-child(3) h3 {
+  background-color: var(--olive);
+}
+
+.igm-card:nth-child(4) h3 {
+  background-color: var(--vivid-blue);
+}
+
+.igm-card:nth-child(5) h3 {
+  background-color: var(--navy-blue);
+}
+
+.igm-card em {
+  display: block;
+  font-style: normal;
+  padding-top: 90px;
+  font-size: 16px;
+  font-family: var(--primary-en);
+  padding-left: 12px;
+}
+
+.igm-card:nth-child(1) em {
+  color: var(--mustard);
+}
+
+.igm-card:nth-child(2) em {
+  color: var(--mandarin);
+}
+
+.igm-card:nth-child(3) em {
+  color: var(--olive);
+}
+
+.igm-card:nth-child(4) em {
+  color: var(--vivid-blue);
+}
+
+.igm-card:nth-child(5) em {
+  color: var(--navy-blue);
+}
+
+.igm-card h4 i {
+  padding-right: 7px;
+}
+
+.igm-card:nth-child(1) i {
+  color: var(--mustard);
+}
+
+.igm-card:nth-child(2) i {
+  color: var(--mandarin);
+}
+
+.igm-card:nth-child(3) i {
+  color: var(--olive);
+}
+
+.igm-card:nth-child(4) i {
+  color: var(--vivid-blue);
+}
+
+.igm-card:nth-child(5) i {
+  color: var(--navy-blue);
+}
+
+.igm-middle-contents {
+  margin-bottom: 80px;
+}
+
+.igm-middle-contents .igm-worships h1, .igm-meetings h1 {
+  margin-bottom: 20px;
+}
+
+.igm-middle-contents .igm-worships .btn-viewmore {
+  margin-top: 0;
+}
+
+.igm-middle-contents .igm-meetings h4 {
+  margin-bottom: 0;
+}
+
+.igm-middle-contents .igm-meetings ul {
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.igm-middle-contents .igm-meetings ul li {
+  list-style: circle;
+}
+
+.igm-middle-contents img {
+  float: right;
+  width: 360px;
+  opacity: 75%;
+  margin-right: 80px;
+  margin-top: 80px;
+}
+
+.igm-lower-contents {
+  background-color: rgba(253, 184, 55, 0.12);
+  padding-bottom: 2px;
+}
+
+.igm-lower-contents .igm-awana, .igm-lower-contents .igm-catechism {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.igm-lower-contents .igm-awana img {
+  width: 390px;
+}
+
+.igm-lower-contents i {
+  font-size: 55px;
+  color: var(--mustard);
+  opacity: 60%;
+  transform: translateY(15%);
+}
+
+.igm-lower-contents h3 {
+  font-size: 26px;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.awana-info {
+  text-align: center;
+  margin-left: 40px;
+}
+
+.igm-lower-contents h4 {
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.igm-lower-contents h4 span {
+  color: var(--red-wine);
+}
+
+.igm-lower-contents p {
+  padding-top: 0;
+  color: var(--deep-latte);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.igm-lower-contents hr {
+  width: 100px;
+  border: none;
+  height: 1px;
+  background-color: var(--foam-latte);
+}
+
+.igm-catechism {
+  margin-top: 50px;
+}
+
+.igm-catechism .catechism-info {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.igm-lower-contents .igm-catechism img {
+  width: 275px;
+}
+
+.igm-contact-info {
+  margin-top: 50px;
+}
+
+.igm-contact-info h1 {
+  margin-bottom: 20px;
+}
+
+.igm-contact-info ul {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.igm-contact-info ul li {
+  list-style: circle;
+}
+
+.igm-contact-info ul li a {
+  font-weight: 600;
+  background: linear-gradient( 180deg, #6228d7,#ee2a7b,#f9ce34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(0 0 0 / 20%);
+}
+
+.igm-contact-info .btn-viewmore {
+  margin-top: 0;
+}
