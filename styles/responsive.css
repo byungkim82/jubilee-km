@@ -851,5 +851,47 @@
   .young-adults-contents-inner ul {
     text-align-last: left;
   }
+
+  /* Disciples-bible page */
+  .disciples-bible-heading {
+    margin-bottom: 30px;
+  }
+  .disciples-bible-heading h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .disciples-bible-heading h2 b {
+    font-weight: normal;
+    display: block;
+    font-size: 22px;
+  }
+  .disciples-bible-heading p, .disciples-bible-heading p span {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .disciples-bible-heading p span {
+    display: inline;
+  }
+  .disciples-bible-contents-container h1.sub-title {
+    padding-top: 30px;
+  }
+  .disciples-bible-cards-container {
+    padding-bottom: 40px;
+  }
+  .disciples-bible-cards-container a {
+    width: 100%;
+    height: 250px;
+  }
+  .lecture-info h1 {
+    font-weight: 500;
+  }
+  .disciples-bible-registration h1.sub-title {
+    margin-top: 30px;
+  }
+  .disciples-bible-registration ul {
+    line-height: 1.5;
+    text-align-last: left;
+    padding-left: 20px;
+  }
 }
 
