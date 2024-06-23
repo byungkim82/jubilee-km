@@ -2582,11 +2582,13 @@ img.profile-img {
 .misamo-card .misamo-card-img {
   height: 100%;
   opacity: 80%;
+  filter: brightness(70%);
   transition: 0.35s;
 }
 
 .misamo-card:hover .misamo-card-img {
   opacity: 100%;
+  filter: brightness(100%);
 }
 
 .misamo-card .misamo-card-desc {
@@ -3099,7 +3101,7 @@ img.profile-img {
   z-index: -1;
 }
 
-@keyframes slide-from-up {
+@keyframes slide-from-up-igm {
   from {
     top: -270px;
     opacity: 0%;
@@ -3110,7 +3112,7 @@ img.profile-img {
   }
 }
 
-@keyframes slide-from-upup {
+@keyframes slide-from-upup-igm {
   from {
     top: -150px;
     opacity: 0%;
@@ -3121,7 +3123,7 @@ img.profile-img {
   }
 }
 
-@keyframes slide-from-rightright {
+@keyframes slide-from-rightright-igm {
   from {
     right: -100px;
     opacity: 0%;
@@ -3137,7 +3139,7 @@ img.profile-img {
   top: -150px;
   left: 5%;
   opacity: 20%;
-  animation: slide-from-up 2s;
+  animation: slide-from-up-igm 2s;
 }
 
 .igm-heading-background i:nth-child(2) {
@@ -3146,7 +3148,7 @@ img.profile-img {
   opacity: 18%;
   top: 3px;
   right: 10%;
-  animation: slide-from-upup 2.5s;
+  animation: slide-from-upup-igm 2.5s;
 }
 
 .igm-heading-background i:nth-child(3) {
@@ -3155,7 +3157,7 @@ img.profile-img {
   top: 60px;
   right: 180px;
   opacity: 10%;
-  animation: slide-from-rightright 2s;
+  animation: slide-from-rightright-igm 2s;
 }
 
 .igm-heading-background i:nth-child(4) {

@@ -785,6 +785,10 @@
     margin-bottom: 15px;
     text-align: left;
   }
+  .misamo-card .misamo-card-img{
+    opacity: 100%;
+    filter: brightness(100%);
+  }
   .misamo-card .misamo-card-desc {
     padding: 10px;
   }
