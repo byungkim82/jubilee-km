@@ -570,7 +570,6 @@
   }
   .registration-graphic {
     flex-direction: column;
-    margin: 30px 0;
     align-items: center;
   }
   .registration-graphic .circle {
@@ -797,5 +796,288 @@
   .sermon-page-nav-buttons {
     display: flex;
     justify-content: space-between;
+  }
+
+  /* Young-adults page */
+  .young-adults h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .young-adults-contents {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .young-adults-card {
+    margin-bottom: 50px;
+  }
+  .young-adults-card:last-child {
+    margin-bottom: 0;
+  }
+  .young-adults-card h1 {
+    padding-left: 120px;
+    font-size: 28px;
+  }
+  .young-adults-contents-inner ul {
+    text-align-last: left;
+  }
+
+  /* Misamo page */
+  .misamo h1.sub-title {
+    padding-bottom: 15px;
+  }
+  .misamo-heading-background i:first-child {
+    font-size: 180px;
+    top: -120px;
+    left: -10%;
+  }
+  .misamo-heading-background i:nth-child(2) {
+    font-size: 80px;
+    top: -90px;
+    right: 0;
+    animation: none;
+  }
+  .misamo-heading-background i:last-child {
+    font-size: 150px;
+    top: 150px;
+  }
+  .misamo-heading {
+    width: 100%;
+  }
+  .misamo-heading h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .misamo-heading h2 b {
+    font-size: 18px;
+    display: block;
+  }
+  .misamo-heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .misamo-contents {
+    margin-bottom: 20px;
+  }
+  .misamo-contents-container {
+    padding: 30px 0 20px 0;
+  }
+  .misamo-card {
+    width: 100%;
+    height: 140px;
+    gap: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .misamo-card .misamo-card-img{
+    opacity: 100%;
+    filter: brightness(100%);
+  }
+  .misamo-card .misamo-card-desc {
+    padding: 10px;
+  }
+  .misamo-card-desc h4 {
+    font-size: 14px;
+  }
+  .misamo-card-desc h4 em {
+    font-size: 12px;
+  }
+  .misamo-card-desc ul {
+    padding-left: 15px;
+    font-size: 10px;
+    line-height: 1.3;
+    margin-top: 5px;
+  }
+  .misamo-card-desc p {
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  .misamo-contents-inner h3 {
+    font-size: 16px;
+  }
+  .misamo-contents-inner h3 i {
+    display: block;
+    line-height: 1.7;
+    font-size: 24px;
+  }
+  .misamo-participate {
+    padding-top: 30px;
+  }
+  .misamo-participate-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .misamo-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .misamo-participate-boxes button {
+    margin-bottom: 30px;
+  }
+
+  /* Adults-care page */
+  .adults-care-heading-inner h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .adults-care-contents {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .adults-care-card {
+    margin-bottom: 25px;
+    width: 80%;
+    height: 200px;
+  }
+  .adults-care-card:last-child {
+    margin-bottom: 0;
+  }
+  .young-adults-contents-inner ul {
+    text-align-last: left;
+  }
+
+  /* Disciples-bible page */
+  .disciples-bible-heading {
+    margin-bottom: 30px;
+  }
+  .disciples-bible-heading h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .disciples-bible-heading h2 b {
+    font-weight: normal;
+    display: block;
+    font-size: 22px;
+  }
+  .disciples-bible-heading p, .disciples-bible-heading p span {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .disciples-bible-heading p span {
+    display: inline;
+  }
+  .disciples-bible-contents-container h1.sub-title {
+    padding-top: 30px;
+  }
+  .disciples-bible-cards-container {
+    padding-bottom: 40px;
+  }
+  .disciples-bible-cards-container a {
+    width: 100%;
+    height: 250px;
+  }
+  .lecture-info h1 {
+    font-weight: 500;
+  }
+  .disciples-bible-registration h1.sub-title {
+    margin-top: 30px;
+  }
+  .disciples-bible-registration ul {
+    line-height: 1.5;
+    text-align-last: left;
+    padding-left: 20px;
+  }
+
+  /* Igm page */
+  .igm-heading-background i:first-child {
+    font-size: 170px;
+  }
+  .igm-heading-background i:nth-child(3) {
+    font-size: 110px;
+  }
+  .igm-heading-background i:nth-child(4), .igm-heading-background i:nth-child(5) {
+    display: none;
+  }
+  .igm-heading {
+    width: 100%;
+    margin: 20px auto 50px auto;
+  }
+  .igm-heading h2 {
+    font-size: 22px;
+  }
+  h1.with-border {
+    transform: translateY(-60%);
+    margin-bottom: 0;
+  }
+  .igm-cards-container {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  .igm-card {
+    width: 80%;
+  }
+  .igm-card em {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+  .igm-middle-contents img {
+    display: none;
+  }
+  .igm-middle-contents {
+    margin: 30px 0;
+  }
+  .igm-middle-contents .igm-meetings h4 {
+    text-align: left;
+    line-height: 1.5;
+  }
+  .igm-middle-contents .igm-meetings ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+  .igm-lower-contents {
+    padding-bottom: 0;
+  }
+  .igm-lower-contents .igm-awana {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .igm-lower-contents .igm-awana img {
+    width: 80%;
+    margin: 10px 0 20px 0;
+  }
+  .igm-lower-contents i {
+    font-size: 45px;
+  }
+  .igm-lower-contents h3 {
+    display: block;
+    line-height: 1.5;
+    transform: translateY(10%);
+    padding: 0;
+    margin: 0;
+  }
+  .igm-lower-contents i.fa-solid.fa-quote-left {
+    text-align: left;
+  }
+  .awana-info {
+    margin-left: 0;
+  }
+  .igm-lower-contents h4 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .igm-lower-contents p {
+    text-align: center;
+  }
+  .igm-lower-contents .igm-catechism {
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+  .igm-lower-contents .igm-catechism img {
+    margin-bottom: 20px;
+  }
+  .igm-catechism .catechism-info {
+    margin-right: 0;
+  }
+  .igm-contact-info {
+    margin-top: 30px;
+  }
+  .igm-contact-info ul {
+    text-align: left;
+    padding-left: 20px;
   }
 }

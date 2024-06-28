@@ -234,6 +234,11 @@ body {
   opacity:1;} 
 }
 
+@keyframes slide-from-right {
+  from { right: -200px; opacity: 0;}
+  to { right: 0; opacity: 1; }
+}
+
 
 /* #### Landing Page #### */
 
@@ -1505,6 +1510,8 @@ section.groupcare {
   top: 20%;
   right: 0;
   text-align: right;
+  animation-name: slide-from-right;
+  animation-duration: 2s;
 }
 
 .scripture-contents i {
@@ -1730,6 +1737,9 @@ h1.sub-title {
   border-collapse: collapse;
   table-layout: fixed;
 }
+.worship-upper {
+  animation: floating-effect 2s;
+}
 
 .worship-services-info h1 {
   margin-bottom: 35px;
@@ -1803,6 +1813,10 @@ h1.sub-title {
 .ministry-values.page-banner {
   background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
   background-size: cover; 
+}
+
+.ministry-values-inner {
+  animation: floating-effect 2s;
 }
 
 .ministry-values-heading {
@@ -1960,6 +1974,10 @@ h1.sub-title {
   margin-bottom: 30px;
 }
 
+.rules-details {
+  margin-bottom: 50px;
+}
+
 .rules-details .rules-detail-heading {
   text-align: center;
   font-size: 24px;
@@ -1967,6 +1985,12 @@ h1.sub-title {
   background-color: var(--latte);
   padding: 15px 0;
   color: #fff;
+  transition: 0.3s;
+}
+
+.rules-detail-heading:hover {
+  cursor: pointer;
+  background-color: var(--deep-latte);
 }
 
 .rules-details .rules-detail-heading i {
@@ -2069,10 +2093,15 @@ img.tree2-vector {
   width: 150px;
 }
 
+.new-members-registration h1.sub-title {
+  margin-bottom: 40px;
+}
+
 .registration-graphic {
   display: flex;
   flex: 1;
-  margin: 50px 0;
+  margin: 0;
+  animation: floating-effect 2.5s;
 }
 
 .registration-first-part,
@@ -2244,6 +2273,7 @@ img.tree2-vector {
 .upper-staffs {
   background-color: var(--creamy-white);
   position: relative;
+  animation: floating-effect 2s;
 }
 
 .upper-staffs-inner {
@@ -2380,6 +2410,10 @@ img.profile-img {
 .direction.page-banner {
   background: url(/resources/images/introduction/introduction-banner.jpg) no-repeat center center;
   background-size: cover; 
+}
+
+.direction-inner {
+  animation: floating-effect 2s;
 }
 
 .direction-inner i {
@@ -2654,3 +2688,1206 @@ img.profile-img {
   text-align: center;
 }
 
+/* Young-adults page */
+
+.young-adults.page-banner {
+  background: url(/resources/images/groupcare/groupcare-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.young-adults h1.sub-title {
+  margin-bottom: 20px;
+}
+
+.young-adults h3 {
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.young-adults h3 span {
+  color: var(--dark-olive);
+}
+
+.young-adults-contents {
+  background-color: var(--creamy-white);
+  padding: 80px 0 70px 0;
+}
+
+.young-adults-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: floating-effect 2s;
+}
+
+.young-adults-card {
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 40px 30px 30px 30px;
+  position: relative;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.35s;
+}
+
+.young-adults-card:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+}
+
+.young-adults-card .icon-bg {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -12%;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.436);
+}
+
+.young-adults-card h1 {
+  font-family: var(--secondary-kr);
+  font-weight: 600;
+  padding-left: 140px;
+  margin-top: 10px;
+}
+
+.young-adults-card h4{
+  line-height: 1.5;
+  font-family: var(--tertiary-kr);
+}
+
+.young-adults-card h4 span {
+  font-family: var(--tertiary-kr);
+}
+
+.young-adults-card:first-child .icon-bg {
+  background: linear-gradient(135deg, rgba(32, 68, 140, 0.5),rgba(32, 68, 140, 1));
+  text-align: center;
+  animation: floating-effect 1.5s;
+}
+
+.young-adults-card:first-child .icon-bg i {
+  font-size: 60px;
+  line-height: 105px;
+}
+
+.young-adults-card:first-child h1 {
+  color: var(--navy-blue);
+}
+
+.young-adults-card:first-child h4 span {
+  color: var(--navy-blue);
+  font-family: var(--tertiary-kr);
+}
+
+.young-adults-card:nth-child(2) .icon-bg {
+  background: linear-gradient(317deg, #535925 0%, rgba(83, 89, 37, 0.50) 96.2%);
+  text-align: center;
+  animation: floating-effect 2s;
+}
+
+.young-adults-card:nth-child(2) .icon-bg i {
+  font-size: 45px;
+  line-height: 110px;
+}
+
+.young-adults-card:nth-child(2) .icon-bg i:last-child {
+  transform: scaleX(-1);
+}
+
+.young-adults-card:nth-child(2) h1 {
+  color: var(--dark-olive);
+}
+
+.young-adults-card:nth-child(2) h4 {
+  line-height: 1.5;
+}
+
+.young-adults-card:nth-child(2) h4 span {
+  color: var(--dark-olive);
+}
+
+.young-adults-card:nth-child(3) .icon-bg {
+  background: linear-gradient(319deg, #FF6D03 0%, rgba(255, 109, 3, 0.50) 94.46%);
+  text-align: center;
+  animation: floating-effect 2.5s;
+}
+
+.young-adults-card:nth-child(3) .icon-bg i {
+  font-size: 48px;
+  line-height: 110px;
+}
+
+.young-adults-card:nth-child(3) h1 {
+  color: var(--mandarin);
+}
+
+.young-adults-card:nth-child(3) h4 {
+  line-height: 1.5;
+}
+
+.young-adults-card:nth-child(3) h4 span {
+  color: var(--mandarin);
+}
+
+.young-adults-contents-inner h1.sub-title {
+  margin-top: 60px;
+}
+
+.young-adults-contents-inner ul {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.young-adults-contents-inner ul li {
+  list-style: circle;
+}
+
+.young-adults-contents-inner button {
+  margin-top: 0;
+}
+
+.young-adults.page-contents {
+  padding-bottom: 0;
+}
+
+/* Misamo page */
+
+.misamo.page-banner {
+  background: url(/resources/images/misamo/missionary-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.misamo-heading-background {
+  position: relative;
+}
+
+.misamo-heading-background i {
+  position: absolute;
+  color: var(--vivid-blue);
+  z-index: -1;
+}
+
+@keyframes slide-from-up {
+  from {
+    top: -250px;
+    opacity: 0%;
+  }
+  to {
+    top: -120px;
+    opacity: 8%;
+  }
+}
+
+@keyframes slide-from-upup {
+  from {
+    top: -200px;
+    opacity: 0%;
+  }
+  to {
+    top: -130px;
+    opacity: 6%;
+  }
+}
+
+@keyframes slide-from-rightright {
+  from {
+    right: -100px;
+    opacity: 0%;
+  }
+  to {
+    right: 100px;
+    opacity: 7%;
+  }
+}
+
+.misamo-heading-background i:first-child {
+  font-size: 250px;
+  top: -120px;
+  left: 7%;
+  opacity: 8%;
+  animation: slide-from-up 2s;
+}
+
+.misamo-heading-background i:nth-child(2) {
+  font-size: 120px;
+  opacity: 6%;
+  top: -130px;
+  right: 35%;
+  animation: slide-from-upup 2s;
+}
+
+.misamo-heading-background i:last-child {
+  font-size: 170px;
+  top: 110px;
+  right: 100px;
+  opacity: 7%;
+  animation: slide-from-rightright 2s;
+}
+
+.misamo-heading {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.misamo-heading h2 {
+  color: var(--navy-blue);
+  font-family: var(--secondary-kr);
+  font-weight: 600;
+}
+
+.misamo-heading h2 b {
+  font-size: 24px;
+  font-family: var(--secondary-kr);
+  color: var(--black);
+}
+
+.misamo-heading h2 b span {
+  font-family: var(--secondary-kr);
+  color: var(--vivid-blue);
+}
+
+.misamo-heading p {
+  font-family: var(--tertiary-kr);
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.misamo-contents-container {
+  background-color: var(--creamy-white);
+  padding-top: 50px;
+  animation: floating-effect 2s;
+  padding-bottom: 30px;
+}
+
+.misamo-contents{
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.misamo-card {
+  width: 630px;
+  height: 200px;
+  display: flex;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.292);
+  transition: 0.35s;
+  margin-bottom: 20px;
+}
+
+.misamo-card:hover {
+  transform: translateY(-3%);
+}
+
+.misamo-card .misamo-card-img {
+  height: 100%;
+  opacity: 80%;
+  filter: brightness(70%);
+  transition: 0.35s;
+}
+
+.misamo-card:hover .misamo-card-img {
+  opacity: 100%;
+  filter: brightness(100%);
+}
+
+.misamo-card .misamo-card-desc {
+  padding: 20px;
+}
+
+.misamo-card-desc h4 {
+  margin-bottom: 0;
+}
+
+.misamo-card-desc h4 span {
+  color: var(--vivid-blue);
+  font-weight: 600;
+}
+
+.misamo-card-desc h4 em {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.misamo-card-desc ul {
+  padding-left: 20px;
+}
+
+.misamo-card-desc ul li {
+  list-style: circle;
+}
+
+.misamo-card:nth-child(5) .misamo-card-desc ul {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.misamo-card-desc p {
+  margin-top: 15px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.JC-misamo-instagram {
+  position: relative;
+}
+
+.JC-misamo-instagram i {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.JC-misamo-instagram i.fa-brands.fa-instagram {
+  background: linear-gradient( 180deg, #6228d7,#ee2a7b,#f9ce34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(0 0 0 / 20%);
+  font-size: 24px;
+}
+
+.misamo-contents-inner h3 {
+  font-family: var(--tertiary-kr);
+  text-align: center;
+}
+
+.misamo-contents-inner h3 i {
+  color: var(--red-wine);
+}
+
+.misamo-participate {
+  padding-top: 50px;
+}
+
+.misamo-participate-boxes {
+  display: flex;
+}
+
+.misamo-box {
+  width: 315px;
+  height: 85px;
+  border: 1px solid var(--deep-latte);
+  border-radius: 10px;
+  margin-right: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.368);
+}
+
+.misamo-box b {
+  position: absolute;
+  left: 5px;
+  top: -13px;
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: var(--deep-latte);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: normal;
+  text-align: center;
+  padding: auto;
+  line-height: 28px;
+}
+
+.misamo-box h4 {
+  transform: translateY(120%);
+}
+
+.misamo-box h4 span {
+  color: var(--red-wine);
+  font-weight: 600;
+}
+
+.misamo-participate-boxes button {
+  margin-top: 18px;
+}
+
+/* Adults-care page */
+
+.adults-care.page-banner {
+  background: url(/resources/images/groupcare/groupcare-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.adults-care h1.sub-title {
+  margin-bottom: 20px;
+}
+
+.adults-care h3 {
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.adults-care h3 span {
+  color: var(--deep-latte);
+}
+
+.adults-care-contents {
+  background-color: var(--creamy-white);
+  padding: 60px 0;
+}
+
+.adults-care-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: floating-effect 2s;
+  padding-bottom: 20px;
+}
+
+.adults-care-card {
+  width: 236px;
+  min-width: 150px;
+  height: 220px;
+  border-radius: 40px 20px 20px 20px;
+  background-color: #fff;
+  padding: 0px auto;
+  position: relative;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.35s;
+  text-align: center;
+}
+
+.adults-care-card:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+}
+
+.adults-care-card h3, .adults-care-card h4, .adults-care-card p {
+  font-family: var(--tertiary-kr);
+}
+
+.adults-care-card h3 {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  line-height: 60px;
+  top: 30px;
+  left: -10px;
+  border-radius: 10px 5px 5px 5px;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.425);
+  animation: floating-effect 1.7s;
+}
+
+.adults-care-card h4 {
+  padding-top: 120px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.adults-care-card:nth-child(1) h3 {
+  background-color: var(--navy-blue);
+}
+
+.adults-care-card:nth-child(2) h3 {
+  background-color: var(--vivid-blue);
+}
+
+.adults-care-card:nth-child(3) h3 {
+  background-color: var(--dark-olive);
+}
+
+.adults-care-card:nth-child(4) h3 {
+  background-color: var(--olive);
+}
+
+.adults-care-card:nth-child(5) h3 {
+  background-color: var(--deep-latte);
+}
+
+.adults-care-meetings {
+  margin-top: 50px;
+}
+
+.adults-care-meetings h4 {
+  font-weight: normal;
+}
+
+.adults-care-meetings button {
+  margin-top: 0;
+}
+
+.adults-care.page-contents {
+  padding-bottom: 0;
+}
+
+/* Disciples-bible page */
+
+.disciples-bible.page-banner {
+  background: url(/resources/images/groupcare/groupcare-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.disciples-bible-heading-inner {
+  position: relative;
+}
+
+@keyframes floating-effect-2 {
+  from {
+    opacity: 0;
+    bottom: -250px;
+  }
+  to {
+    opacity: 15%;
+    bottom: -90px;
+  }
+}
+
+.disciples-bible-heading img {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  opacity: 15%;
+  z-index: -1;
+  animation: floating-effect-2 2s;
+}
+
+.disciples-bible-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.disciples-bible-heading h2 {
+  margin-bottom: 20px;
+  font-family: var(--secondary-kr);
+  color: var(--deep-latte);
+  font-weight: 600;
+}
+
+.disciples-bible-heading h2 b {
+  font-size: 24px;
+  color: var(--deep-latte);
+  font-family: var(--secondary-en);
+  font-weight: 500;
+}
+
+.disciples-bible-heading p, .disciples-bible-heading p span {
+  font-family: var(--tertiary-kr);
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.disciples-bible-heading p span {
+  display: block;
+}
+
+.disciples-bible-contents-container {
+  background-color: var(--creamy-white);
+  animation: floating-effect 3s;
+  padding-bottom: 20px;
+}
+
+.disciples-bible-contents-container h1.sub-title {
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.disciples-bible-contents-container h1.sub-title span {
+  color: var(--red-wine);
+}
+
+.disciples-bible-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;  
+  width: inherit;
+  justify-content: start;
+  gap: 35px;
+}
+
+.disciples-bible-cards-container a {
+  width: 390px;
+}
+
+.disciples-bible-cards-container a .disciples-bible-card {
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.598);
+  position: relative;
+  padding: 10px 10px 15px 10px;
+  transition: 0.35s;
+}
+
+.disciples-bible-card:hover {
+  transform: translateY(-3%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.272);
+}
+
+.disciples-bible-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.disciples-bible-card:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(20deg, rgba(0, 0, 0, 0.806), rgba(128, 128, 128, 0.473));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.disciples-bible-card:after {
+  content: '';
+  color: #fff;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(20deg, rgba(0, 0, 0, 0.945), rgba(0, 0, 0, 0.765));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.disciples-bible-card:hover::after {
+  opacity: 100%;
+}
+
+.disciples-bible-card .lecture-info {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.disciples-bible-card .lecture-more-info {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  color: #fff;
+  z-index: 5;
+  font-weight: 400;
+  font-family: var(--tertiary-kr);
+  border: 1px solid var(--latte);
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+}
+
+.disciples-bible-card:hover .lecture-more-info {
+  opacity: 100%;
+}
+
+.lecture-badge {
+  text-align: left;
+}
+
+.lecture-badge span {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--deep-latte);
+  padding: 1px 5px;
+  border-radius: 5px 0 0 5px;
+  font-family: var(--tertiary-kr);
+}
+
+.lecture-badge b {
+  display: inline-block;
+  font-weight: normal;
+  background-color: var(--deep-latte);
+  padding: 2px 6px;
+  border-radius: 0 5px 5px 0;
+  font-family: var(--tertiary-kr);
+}
+
+.lecture-info h3 {
+  color: var(--mustard);
+  font-family: var(--secondary-kr);
+  margin-bottom: 20px;
+}
+
+.lecture-info h1 {
+  font-weight: 600;
+  font-family: var(--secondary-kr);
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+}
+
+.lecture-info h4 {
+  font-weight: 400;
+  font-family: var(--tertiary-kr);
+  margin: 0;
+  font-size: 18px;
+}
+
+.disciples-bible-cards-container a:nth-child(2) .lecture-badge b {
+  background-color: var(--red-wine);
+}
+
+.disciples-bible-cards-container a:nth-child(2) .lecture-badge span {
+  color: var(--red-wine);
+}
+
+.disciples-bible-cards-container a:nth-child(3) .lecture-badge b {
+  background-color: var(--dark-olive);
+}
+
+.disciples-bible-cards-container a:nth-child(3) .lecture-badge span {
+  color: var(--dark-olive);
+}
+
+.disciples-bible-cards-container a:nth-child(4) .lecture-badge b {
+  background-color: var(--navy-blue);
+}
+
+.disciples-bible-cards-container a:nth-child(4) .lecture-badge span {
+  color: var(--navy-blue);
+}
+
+.disciples-bible-cards-container a:nth-child(5) .lecture-badge b {
+  background-color: var(--light-black);
+}
+
+.disciples-bible-cards-container a:nth-child(5) .lecture-badge span {
+  color: var(--light-black);
+}
+
+.disciples-bible-registration h1.sub-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.disciples-bible-registration ul {
+  line-height: 1.7;
+}
+
+.disciples-bible-registration ul li {
+  list-style: circle;
+  font-size: 20px;
+}
+
+.disciples-bible-registration .btn-viewmore, .disciples-bible-last-lectures .btn-viewmore {
+  margin-top: 0;
+}
+
+.disciples-bible-last-lectures h1.sub-title {
+  margin-bottom: 20px;
+}
+
+/* Igm page */
+
+.igm.page-banner {
+  background: url(/resources/images/igm/igm-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.igm-heading-background {
+  position: relative;
+}
+
+.igm-heading-background i {
+  position: absolute;
+  color: var(--mandarin);
+  z-index: -1;
+}
+
+@keyframes slide-from-up-igm {
+  from {
+    top: -270px;
+    opacity: 0%;
+  }
+  to {
+    top: -150px;
+    opacity: 20%;
+  }
+}
+
+@keyframes slide-from-upup-igm {
+  from {
+    top: -150px;
+    opacity: 0%;
+  }
+  to {
+    top: 3px;
+    opacity: 18%;
+  }
+}
+
+@keyframes slide-from-rightright-igm {
+  from {
+    right: -100px;
+    opacity: 0%;
+  }
+  to {
+    right: 180px;
+    opacity: 10%;
+  }
+}
+
+.igm-heading-background i:first-child {
+  font-size: 300px;
+  top: -150px;
+  left: 5%;
+  opacity: 20%;
+  animation: slide-from-up-igm 2s;
+}
+
+.igm-heading-background i:nth-child(2) {
+  font-size: 90px;
+  color: var(--olive);
+  opacity: 18%;
+  top: 3px;
+  right: 10%;
+  animation: slide-from-upup-igm 2.5s;
+}
+
+.igm-heading-background i:nth-child(3) {
+  font-size: 130px;
+  color: var(--vivid-blue);
+  top: 60px;
+  right: 180px;
+  opacity: 10%;
+  animation: slide-from-rightright-igm 2s;
+}
+
+.igm-heading-background i:nth-child(4) {
+  font-size: 50px;
+  color: var(--mustard);
+  top: 120px;
+  left: 27%;
+  opacity: 13%;
+}
+
+.igm-heading-background i:nth-child(5) {
+  font-size: 100px;
+  color: var(--mustard);
+  opacity: 10%;
+  top: 20px;
+  left: 30%;
+}
+
+.igm-heading-background i:nth-child(6) {
+  font-size: 80px;
+  color: var(--mustard);
+  top: -150px;
+  right: 320px;
+  opacity: 10%;
+}
+
+.igm-heading-background i:nth-child(7) {
+  font-size: 220px;
+  color: var(--mustard);
+  top: -230px;
+  right: 20px;
+  opacity: 8%;
+}
+
+.igm-heading {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+  color: var(--latte);
+  margin: 50px auto 100px auto;
+}
+
+.igm-heading h2 {
+  font-family: var(--secondary-kr);
+  font-weight: 600;
+}
+
+.igm-heading h2 span {
+  display: block;
+  font-family: var(--secondary-kr);
+  font-weight: 600;
+}
+
+.igm-upper-contents {
+  background-color: rgba(253, 184, 55, 0.07);
+}
+
+h1.with-border {
+  border: 3px solid var(--mustard);
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 5px 15px;
+  transform: translateY(-30%);
+  margin-bottom: 20px;
+}
+
+.igm-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: floating-effect 2s;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.igm-card {
+  width: 236px;
+  min-width: 150px;
+  height: 225px;
+  border-radius: 40px 20px 20px 20px;
+  background-color: #fff;
+  padding: 0px auto;
+  position: relative;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.35s;
+  text-align: center;
+}
+
+.igm-card:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+}
+
+.igm-card h3, .igm-card h4, .igm-card p {
+  font-family: var(--tertiary-kr);
+}
+
+.igm-card h3 {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  line-height: 60px;
+  top: 30px;
+  left: -10px;
+  border-radius: 10px 5px 5px 5px;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.235);
+  animation: floating-effect 1.7s;
+}
+
+.igm-card h4 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.igm-card:nth-child(1) h3 {
+  background-color: var(--mustard);
+}
+
+.igm-card:nth-child(2) h3 {
+  background-color: var(--mandarin);
+}
+
+.igm-card:nth-child(3) h3 {
+  background-color: var(--olive);
+}
+
+.igm-card:nth-child(4) h3 {
+  background-color: var(--vivid-blue);
+}
+
+.igm-card:nth-child(5) h3 {
+  background-color: var(--navy-blue);
+}
+
+.igm-card em {
+  display: block;
+  font-style: normal;
+  padding-top: 90px;
+  font-size: 16px;
+  font-family: var(--primary-en);
+  padding-left: 12px;
+}
+
+.igm-card:nth-child(1) em {
+  color: var(--mustard);
+}
+
+.igm-card:nth-child(2) em {
+  color: var(--mandarin);
+}
+
+.igm-card:nth-child(3) em {
+  color: var(--olive);
+}
+
+.igm-card:nth-child(4) em {
+  color: var(--vivid-blue);
+}
+
+.igm-card:nth-child(5) em {
+  color: var(--navy-blue);
+}
+
+.igm-card h4 i {
+  padding-right: 7px;
+}
+
+.igm-card:nth-child(1) i {
+  color: var(--mustard);
+}
+
+.igm-card:nth-child(2) i {
+  color: var(--mandarin);
+}
+
+.igm-card:nth-child(3) i {
+  color: var(--olive);
+}
+
+.igm-card:nth-child(4) i {
+  color: var(--vivid-blue);
+}
+
+.igm-card:nth-child(5) i {
+  color: var(--navy-blue);
+}
+
+.igm-middle-contents {
+  margin-bottom: 80px;
+}
+
+.igm-middle-contents .igm-worships h1, .igm-meetings h1 {
+  margin-bottom: 20px;
+}
+
+.igm-middle-contents .igm-worships .btn-viewmore {
+  margin-top: 0;
+}
+
+.igm-middle-contents .igm-meetings h4 {
+  margin-bottom: 0;
+}
+
+.igm-middle-contents .igm-meetings ul {
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.igm-middle-contents .igm-meetings ul li {
+  list-style: circle;
+}
+
+.igm-middle-contents img {
+  float: right;
+  width: 360px;
+  opacity: 75%;
+  margin-right: 80px;
+  margin-top: 80px;
+}
+
+.igm-lower-contents {
+  background-color: rgba(253, 184, 55, 0.12);
+  padding-bottom: 2px;
+}
+
+.igm-lower-contents .igm-awana, .igm-lower-contents .igm-catechism {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.igm-lower-contents .igm-awana img {
+  width: 390px;
+}
+
+.igm-lower-contents i {
+  font-size: 55px;
+  color: var(--mustard);
+  opacity: 60%;
+  transform: translateY(15%);
+}
+
+.igm-lower-contents h3 {
+  font-size: 26px;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.awana-info {
+  text-align: center;
+  margin-left: 40px;
+}
+
+.igm-lower-contents h4 {
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.igm-lower-contents h4 span {
+  color: var(--red-wine);
+}
+
+.igm-lower-contents p {
+  padding-top: 0;
+  color: var(--deep-latte);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.igm-lower-contents hr {
+  width: 100px;
+  border: none;
+  height: 1px;
+  background-color: var(--foam-latte);
+}
+
+.igm-catechism {
+  margin-top: 50px;
+}
+
+.igm-catechism .catechism-info {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.igm-lower-contents .igm-catechism img {
+  width: 275px;
+}
+
+.igm-contact-info {
+  margin-top: 50px;
+}
+
+.igm-contact-info h1 {
+  margin-bottom: 20px;
+}
+
+.igm-contact-info ul {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.igm-contact-info ul li {
+  list-style: circle;
+}
+
+.igm-contact-info ul li a {
+  font-weight: 600;
+  background: linear-gradient( 180deg, #6228d7,#ee2a7b,#f9ce34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(0 0 0 / 20%);
+}
+
+.igm-contact-info .btn-viewmore {
+  margin-top: 0;
+}
