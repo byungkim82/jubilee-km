@@ -145,7 +145,88 @@ body {
   color: var(--foam-latte);
 }
 
-/* The animation code */
+/* Table-board CSS */
+.table-board {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.table-board tr {
+  height: 70px;
+  border-bottom: 1px solid var(--latte);
+  transition: 0.35s;
+}
+
+.table-board tr:hover {
+  background-color: var(--creamy-white);
+  color: var(--red-wine);
+}
+
+.table-board tr:first-child {
+  border-top: 2px solid var(--latte);
+}
+
+.table-board tr:last-child {
+  border-bottom: 2px solid var(--latte);
+}
+
+.table-board tr td {
+  padding: 15px;
+}
+
+.table-board tr td:first-child {
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.table-board tr td:last-child {
+  text-align: right;
+  color: var(--deep-latte);
+  width: 120px;
+}
+
+/* Pagenation CSS */
+.pagenation {
+  display: flex;
+  justify-content: center;
+  margin: 70px auto 20px auto;
+}
+
+.pagebox {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid var(--deep-latte);
+  margin-right: 5px;
+  background-color: #fff;
+  color: var(--deep-latte);
+  transition: 0.25s;
+}
+
+.pagebox:hover {
+  background-color: var(--foam-latte);
+}
+
+.pagebox:disabled {
+  border: 1px solid var(--light-gray);
+  color: var(--whitey-gray);
+}
+
+.pagebox:nth-child(3) {
+  background-color: var(--deep-latte);
+  color: #fff;
+}
+
+.pagebox:last-child {
+  margin-right: 0;
+}
+
+/* The Animation code */
 @keyframes floating-effect {
   0% {margin-top: 100px;
   opacity:0;}
@@ -2538,5 +2619,38 @@ img.profile-img {
 .todays-scripture-contents.active, .todays-questions-contents.active {
   opacity: 100%;
   display: block;
+}
+
+/* Church-news page */
+
+.church-news.page-banner {
+  background: url(/resources/images/news/news-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.church-news {
+  text-align: center;
+}
+
+/* Church-members-news page */
+
+.church-members-news.page-banner {
+  background: url(/resources/images/news/news-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.church-members-news {
+  text-align: center;
+}
+
+/* Church-bulletins page */
+
+.church-bulletins.page-banner {
+  background: url(/resources/images/news/news-banner.jpg) no-repeat center center;
+  background-size: cover; 
+}
+
+.church-bulletins {
+  text-align: center;
 }
 
