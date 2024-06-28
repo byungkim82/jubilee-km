@@ -3286,7 +3286,7 @@ img.profile-img {
 .disciples-bible-contents-container {
   background-color: var(--creamy-white);
   animation: floating-effect 3s;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .disciples-bible-contents-container h1.sub-title {

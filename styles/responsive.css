@@ -960,6 +960,9 @@
   .disciples-bible-heading p span {
     display: inline;
   }
+  .disciples-bible-contents-container {
+    padding-bottom: 20px;
+  }
   .disciples-bible-contents-container h1.sub-title {
     padding-top: 30px;
   }
