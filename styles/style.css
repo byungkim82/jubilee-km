@@ -1154,6 +1154,7 @@ section.news {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  width: 75%;
 }
 
 .news-contents .news-sum table tr td:first-child:hover {
@@ -1164,6 +1165,7 @@ section.news {
   text-align: right;
   color: var(--deep-latte);
   padding-right: 10px;
+  width: 25%;
 }
 
 .news-contents .news-sum button.btn-viewmore {
