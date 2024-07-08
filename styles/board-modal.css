@@ -1,0 +1,87 @@
+/* Import local CSS */
+@import url(/styles/variables.css);
+@import url(/styles/reset.css);
+
+html { scroll-behavior: smooth; }
+
+* {
+  font-family: var(--primary-kr);
+}
+
+body {
+  margin: 0 auto;
+  color: var(--black);
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.board-modal-container {
+  width: 800px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px rgba(128, 128, 128, 0.326);
+  position: relative;
+  overflow: hidden;
+}
+
+.board-modal-side-bar {
+  width: 18px;
+  background-color: var(--foam-latte);
+  height: inherit;
+  position: absolute;
+}
+
+.board-modal-background img:first-child {
+  width: 33%;
+  position: absolute;
+  top: -10%;
+  left: -3%;
+  opacity: 5%;
+}
+
+.board-modal-background img:last-child {
+  width: 55%;
+  position: absolute;
+  bottom: -20%;
+  right: -15%;
+  opacity: 5%;
+}
+
+.board-modal-close {
+  color: var(--black);
+  float: right;
+  margin: 15px;
+  font-size: 25px;
+}
+
+.board-modal-contents {
+  text-align: center;
+  margin: 40px;
+}
+
+h1.board-modal-title {
+  color: var(--deep-latte);
+}
+
+h4.board-modal-created-at {
+  color: var(--silver);
+} 
+
+.board-modal-contents hr {
+  border: none;
+  background-color: var(--whitey-gray);
+  height: 1px;
+}
+
+.board-modal-body {
+  margin: 30px auto;
+}
+
+.modal-jubilee-logo {
+  width: 12%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
