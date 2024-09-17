@@ -1083,4 +1083,12 @@
     text-align: left;
     padding-left: 20px;
   }
+
+  /* mobile-modal */
+  .board-modal-container {
+    width: 100%;
+  }
+  h1.board-modal-title {
+    line-height: 1.3;
+  }
 }
