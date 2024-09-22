@@ -2388,6 +2388,7 @@ img.profile-img {
 
 .pastors-profile, .junior-pastors, .junior-pastors-em {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .lower-staffs-inner .profile-card {
