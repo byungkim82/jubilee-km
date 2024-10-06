@@ -1,0 +1,61 @@
+/* Import local CSS */
+@import url(/styles/variables.css);
+@import url(/styles/reset.css);
+
+html { scroll-behavior: smooth; }
+
+* {
+  font-family: var(--primary-kr);
+}
+
+body {
+  margin: 0 auto;
+  color: var(--black);
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.intro-background {
+  text-align: center;
+}
+
+.intro-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-slider {
+  color: white;
+  position: absolute;
+  top: 275px;
+}
+
+.slider-heading p {
+  font-size: 70px;
+  color: var(--white);
+  font-family: var(--intro-title);
+  letter-spacing: -3px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.806);
+}
+
+.slider-heading p b {
+  font-size: 60px;
+  color: var(--foam-latte);
+  font-weight: normal;
+  font-family: var(--intro-title);
+  letter-spacing: -3px;
+}
+
+.slider-heading p em {
+  font-style: normal;
+  color: var(--foam-latte);
+  font-family: var(--intro-title);
+  letter-spacing: -3px;
+}
+
+.slider-desc p, .slider-desc p span {
+  font-family: var(--tertiary-kr);
+  font-size: 28px;
+  line-height: 1.2;
+}
+
